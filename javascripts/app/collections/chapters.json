@@ -1,0 +1,274 @@
+[
+{
+    "id": "1",
+    "title": "Overview",
+    "topics": [
+        { 
+            "id": "1a",
+            "title": "Resilient Landscapes"
+        },
+        {
+            "id": "1b",
+            "title": "Fire adapted communities"
+        }
+    ]
+},
+
+{
+    "id": "2",
+    "title": "Prelude",
+    "topics": [
+        {
+            "id": "2a",
+            "title": "Drought"
+        },
+        {
+            "id": "2b",
+            "title": "Fuel conditions"
+        },
+        {
+            "id": "2c",
+            "title": "Forest health"
+        },
+        {
+            "id": "2d",
+            "title": "Growth of WUI"
+        },
+        {
+            "id": "2e",
+            "title": "Cohesive Strategy (Existing strategy plan that determines how agencies will work together)"
+        },
+        {
+            "id": "2f",
+            "title": "Unprotected lands"
+        }
+    ]
+},
+
+{
+    "id": "3",
+    "title": "January Wildfires",
+    "topics": [
+        {
+            "id": "3a",
+            "title": "Historical January Firesb.Prediction indicators of a bad fire season"
+        }
+    ]
+},
+
+{
+    "id": "4",
+    "title": "Wet Spring",
+    "topics": [
+        {
+            "id": "4a",
+            "title": "Grass &amp; Carrier fuels"
+        },
+        {
+            "id": "4b",
+            "title": "NFPET Arrives in the rain"
+        },
+        {
+            "id": "4c",
+            "title": "Provides opportunity Forestr preparedness planning"
+        },
+        {
+            "id": "4d",
+            "title": "Exotic species (ex: seeing spring rains bring up continuous fuels in contrast to native bunchgrasses)"
+        }
+    ]
+},
+
+{
+    "id": "5",
+    "title": "Season Begins",
+    "topics": [
+        {
+            "id": "5a",
+            "title": "Effects of WUI on suppression tactics"
+        },
+        {
+            "id": "5b",
+            "title": "Enhanced IA"
+        },
+        {
+            "id": "5c",
+            "title": "Forest Conditions &amp; Fuels accumulation"
+        },
+        {
+            "id": "5d",
+            "title": "Two Bulls Fire"
+        },
+        {
+            "id": "5e",
+            "title": "Lightning causes lots of ignitions"
+        }
+    ]
+},
+
+{
+    "id": "6",
+    "title": "Siege ramps Up",
+    "topics": [
+        {
+            "id": "6a",
+            "title": "Use of military"
+        },
+        {
+            "id": "6b",
+            "title": "Fusion Point"
+        },
+        {
+            "id": "6c",
+            "title": "Risk management"
+        },
+        {
+            "id": "6d",
+            "title": "2-3 New large fires every week needing to be staffed"
+        },
+        {
+            "id": "6e",
+            "title": "Examples of Interagency Cohesion &amp; Coordination"
+        }
+    ]
+},
+
+{
+    "id": "7",
+    "title": "Notable Fires",
+    "topics": [
+        {
+            "id": "7a",
+            "title": "Carlton"
+        },
+        {
+            "id": "7b",
+            "title": "Buzzard"
+        },
+        {
+            "id": "7c",
+            "title": "Deception"
+        },
+        {
+            "id": "7d",
+            "title": "Interagency Coordination"
+        },
+        {
+            "id": "7e",
+            "title": "MAC Group Mobilized"
+        },
+        {
+            "id": "7f",
+            "title": "Safety"
+        },
+        {
+            "id": "7g",
+            "title": "Costs "
+        },
+        {
+            "id": "7h",
+            "title": "Resources lost"
+        },
+        {
+            "id": "7i",
+            "title": "Values @ Risk"
+        },
+        {
+            "id": "7j",
+            "title": "Inaccessible areas"
+        },
+        {
+            "id": "7k",
+            "title": "Risk Management tradeoffs"
+        }
+    ]
+},
+
+{
+    "id": "8",
+    "title": "Lightning &amp; rains",
+    "topics": [
+        {
+            "id": "8a",
+            "title": "Situation bad and looking worse, resources stretched as far as they communitiesan stretch, a big threatening storm comes rolling in that promises to bring more lightning. Looks like another wave of numerous ignitions and turns out to be wet."
+        },
+        {
+            "id": "8b",
+            "title": "Flooding and other resource concerns outside of fire but related consequences."
+        }
+    ]
+},
+
+{
+    "id": "9",
+    "title": "Fall &quot;Surge&quot;",
+    "topics": [
+        {
+            "id": "9a",
+            "title": "Starts with warm, dry, windy Days…"
+        }
+    ]
+},
+
+{
+    "id": "10",
+    "title": "Season Ends",
+    "topics": [
+        {
+            "id": "10a",
+            "title": "What worked, what did not?"
+        },
+        {
+            "id": "10b",
+            "title": "What was new?"
+        },
+        {
+            "id": "10c",
+            "title": "What can we do to mitigate large fires?"
+        },
+        {
+            "id": "10d",
+            "title": "Fuels &amp; Prevention vs suppressionression"
+        },
+        {
+            "id": "10e",
+            "title": "Ongoing safety"
+        },
+        {
+            "id": "10f",
+            "title": "Revisit Prelude topics"
+        }
+    ]
+},
+
+{
+    "id": "11",
+    "title": "Denouement",
+    "topics": [
+        {
+            "id": "11a",
+            "title": "Safety"
+        },
+        {
+            "id": "11b",
+            "title": "Tradeoffs of prevention and fuel treatments compared to Enhanceded suppression"
+        },
+        {
+            "id": "11c",
+            "title": "Which would give us more bang for the buck?"
+        },
+        {
+            "id": "11d",
+            "title": "What coan we mitigate and what is beyond our sphere of control?"
+        },
+        {
+            "id": "11e",
+            "title": "Is this the &quot;New Normal&quot;?"
+        },
+        {
+            "id": "11f",
+            "title": "How can we prepare for the future?"
+        }
+    ]
+}
+]
