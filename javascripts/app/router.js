@@ -17,7 +17,7 @@ function($, _, Backbone, homeView, videoView) {
     },
     home: function() {
       //console.log('in AppRouter.home', arguments)
-      var view = new homeView();
+      // var view = new homeView();
     },
     video: function() {
       //console.log('in AppRouter.home', arguments)
