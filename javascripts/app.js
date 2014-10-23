@@ -12,6 +12,9 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs) {
     //console.log("in app.initialize");
     // Pass in our Router module and call it's initialize function
     Router.initialize();
+
+    // Enable all tooltips.
+    $(function () { $("[data-toggle='tooltip']").tooltip(); });
   };
 
   return { 
