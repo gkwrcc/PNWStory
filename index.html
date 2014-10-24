@@ -66,7 +66,13 @@
                 <p>
                 Even when it rained in February and March,
                 the weather brought disaster to a neighborhood near Oso, Washington.
-                Washington Department of Natural Resources incident management teams responded to manage the recovery operations along with many DNR employees, local firefighters, and volunteers.
+                Washington Department of Natural Resources incident management teams responded to manage the recovery operations
+                along with many DNR employees, local firefighters,
+                and <a data-toggle="popover" data-html="true"
+                    title="For more information..."
+                    data-content="about the Oso mudslide, <a href='http://en.wikipedia.org/wiki/2014_Oso_mudslide'>click here</a>. 
+                    <a href='https://washingtondnr.wordpress.com/tag/landslide/'>And here</a>.
+                    ">volunteers</a>.
                 </p>
 
                 <p>
@@ -92,18 +98,7 @@
                 
             </div>
             <div class="col-sm-4 text-center">
-                <h3>Sidebar</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam dictum sollicitudin.
-                </p>
-                <img src="http://placehold.it/200x200" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam dictum sollicitudin.
-                </p>
-                <img src="http://placehold.it/200x200" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam dictum sollicitudin.
-                </p>
+                <img src="images/oregon-gulch-fire.jpg" width="200" alt="Oregon Gulch Fire">
             </div>
         </div>
     </section>
@@ -309,6 +304,7 @@
 </footer>
 <script src="javascripts/scale.fix.js"></script>
 <script>
+if (document.location.hostname != "localhost") {
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -316,6 +312,7 @@
 
   ga('create', 'UA-56061199-1', 'auto');
     ga('send', 'pageview');
+}
 
 </script>
 </body>

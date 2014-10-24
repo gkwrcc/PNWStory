@@ -15,6 +15,8 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs) {
 
     // Enable all tooltips.
     $(function () { $("[data-toggle='tooltip']").tooltip(); });
+    // Enable all popovers.
+    $(function () { $("[data-toggle='popover']").popover(); });
   };
 
   return { 

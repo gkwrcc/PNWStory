@@ -395,3 +395,9 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+.popover-content,
+.popover-title {
+    color: black;
+    font-size: .75em;
+}
