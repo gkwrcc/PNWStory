@@ -1,10 +1,16 @@
 var gulp = require('gulp');
+var express = require('express');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var minifycss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var gzip = require('gulp-gzip');
 var livereload = require('gulp-livereload');
+
+// Set up a static server
+var serverport = 8000;
+var server = express();
+server.use(express.static('.'));
 
 var CSSDIR = "./stylesheets/";
 
@@ -21,6 +27,7 @@ gulp.task('build-sass', function() {
 
 // Watch files for changes
 gulp.task('watch', function() {
+    server.listen(serverport);
     livereload.listen();
     gulp.watch('./stylesheets/*', ['build-sass']);
     gulp.watch('./*.html').on('change', livereload.changed);
