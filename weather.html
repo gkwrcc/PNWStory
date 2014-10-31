@@ -26,6 +26,7 @@
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-weight: 700;
         letter-spacing: 1px;
+        margin-right: 110px;
     }
 
     .btn-circle {
@@ -43,12 +44,59 @@
         transition: background .3s ease-in-out;
     }
 
+    .section {
+        margin-right: 110px;
+    }
     .section p {
         display: block;
         width: 360px;
         margin: 0 auto;
         text-align: justify;
         font-size: 1.25em;
+    }
+
+    #menu li {
+        display:inline-block;
+        margin: 3px 0;
+        color: #000;
+    }
+    #menu li.active,
+    #menu li.active:hover{
+        color: #fff;
+    }
+    #menu li a{
+        text-decoration:none;
+        color: white;
+        font-size: 14px;
+        width: 100%;
+    }
+    #menu li.active a:hover{
+        color: rgba(255,255,255,.5);
+        border-left: 3px solid rgb(255, 219, 110);
+    }
+    #menu li:hover{
+        background: rgba(255,255,255, 0.2);
+    }
+    #menu li a,
+    #menu li.active a{
+        padding: 8px;
+        display:block;
+    }
+    #menu li.active a{
+        color: #fff;
+        border-left: 3px solid rgb(255, 219, 110);
+    }
+    #menu {
+        position:absolute;
+        bottom:0;
+        right:0;
+        z-index: 70;
+        width: 100px;
+        height: 100%;
+        padding: 0;
+        margin:0;
+        background-color: rgb(61,67,66);
+        text-align: left;
     }
 
     </style>
@@ -74,10 +122,11 @@
         // Initialize fullpage.js
             $('#fullpage').fullpage({
                 //Navigation Options
-                menu: false,
+                menu: '#menu',
                 anchors:['top',
                 'ch1-1', 'ch1-2', 'ch1-3', 'ch1-4', 'ch1-5', 'ch1-6', 'ch1-7', 'ch1-8', 'ch1-9',
-                'ch2'],
+                'ch2-1'],
+                continuousVertical: true,
                 //navigation: false,
                 //navigationPosition: 'right',
                 //navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -89,6 +138,11 @@
 
   </head>
   <body>
+  <ul id="menu">
+      <li data-menuanchor="top" class="active"><a href="#top">Top</a></li>
+      <li data-menuanchor="ch1-1" class="active"><a href="#ch1-1">Chapter 1<br><strong>Weather</strong></a></li>
+      <li data-menuanchor="ch2-1" class="active"><a href="#ch2-1">Chapter 2</a></li>
+  </ul>
   <div id="fullpage">
 
       <div class="section active text-center" id="top">
@@ -164,7 +218,7 @@
           </p>
       </div><!-- end .section -->
 
-      <div class="section" data-anchor="ch2">
+      <div class="section" data-anchor="ch2-1">
           <h1> Chapter 2 </h1>
       </div><!-- end .section -->
 
