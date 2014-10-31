@@ -16,6 +16,7 @@
     }
     h1, h2, h3 {
         text-align: center;
+        text-shadow: 2px 2px 4px black;
     }
 
     h1.main_title {
@@ -52,7 +53,10 @@
         width: 360px;
         margin: 0 auto;
         text-align: justify;
-        font-size: 1.25em;
+        font-size: 1.5em;
+        font-family: Lora,serif;
+        font-weight: normal;
+        text-shadow: 2px 2px 4px black;
     }
 
     #menu li {
@@ -140,6 +144,10 @@
                 anchors:['top',
                 'ch1-1', 'ch1-2', 'ch1-3', 'ch1-4', 'ch1-5', 'ch1-6', 'ch1-7', 'ch1-8', 'ch1-9',
                 'ch2-1'],
+
+                keyboardScrolling: true,
+                animateAnchor: true,
+
                 // Called after a section is loaded.
                 afterLoad: function(anchorLink, index){
                     //using anchorLink
@@ -151,7 +159,9 @@
                             }
                         }
                     }
-                } // end afterLoad
+                }, // end afterLoad
+                onLeave: function(index, nextIndex, direction) {
+                } // end onLeave
 
             });
     });
@@ -184,12 +194,12 @@
       <div class="section" data-anchor="ch1-2">
           <h3>How difficult a fire season is depends on six things:</h3>
           <p>
-              <br>The nature of wildland vegetation and other fuels including homes intermingled with flammable wildlands.
-              <br>Topography
-              <br>Availability and capability of firefighters
-              <br>Ignitions – even under bad conditions, if fires don’t start thise season is easy 
-              <br>Climate
-              <br>Weather
+              <br>&bull; &nbsp; The nature of wildland vegetation and other fuels including homes intermingled with flammable wildlands.
+              <br>&bull; &nbsp; Topography
+              <br>&bull; &nbsp; Availability and capability of firefighters
+              <br>&bull; &nbsp; Ignitions – even under bad conditions, if fires don’t start thise season is easy 
+              <br>&bull; &nbsp; Climate
+              <br>&bull; &nbsp; Weather
           </p>
       </div><!-- end .section -->
 
