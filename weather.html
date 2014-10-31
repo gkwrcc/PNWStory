@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title></title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="stylesheets/main.min.css">-->
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
+    <style>
+    body {
+        background-color: rgb(0,112,60);
+        color: white;
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    h1.main_title {
+        font-size: 8em;
+        color: rgb(40,40,35);
+        text-shadow: 3px 3px 1px rgba(120, 120, 120, 0.7);
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .btn-circle {
+        width: 70px;
+        height: 70px;
+        margin-top: 15px;
+        padding: 7px 16px;
+        border: 2px solid #fff;
+        border-radius: 35px;
+        font-size: 40px;
+        color: #fff;
+        background: 0 0;
+        -webkit-transition: background .3s ease-in-out;
+        -moz-transition: background .3s ease-in-out;
+        transition: background .3s ease-in-out;
+    }
+
+    .section p {
+        display: block;
+        width: 360px;
+        margin: 0 auto;
+        text-align: justify;
+        font-size: 1.25em;
+    }
+
+    </style>
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="javascripts/libs/jquery.easings.min.js"></script>
+    <script src="javascripts/libs/jquery.slimscroll.min.js"></script>
+    <script src="javascripts/libs/jquery.fullPage.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        // Initialize fullpage.js
+            $('#fullpage').fullpage({
+                //Navigation Options
+                menu: false,
+                anchors:['top',
+                'ch1-1', 'ch1-2', 'ch1-3', 'ch1-4', 'ch1-5', 'ch1-6', 'ch1-7', 'ch1-8', 'ch1-9',
+                'ch2'],
+                //navigation: false,
+                //navigationPosition: 'right',
+                //navigationTooltips: ['firstSlide', 'secondSlide'],
+                //slidesNavigation: true,
+                //slidesNavPosition: 'bottom',
+            });
+    });
+    </script>
+
+  </head>
+  <body>
+  <div id="fullpage">
+
+      <div class="section active text-center" id="top">
+          <h1 class="main_title">Pacific Northwest Fire Story</h1>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i></a>
+      </div><!-- end .section -->
+
+      <div class="section text-center" data-anchor="ch1-1">
+          <h1>Weather and Difficult Fire Seasons</h1>
+          <div>
+              <iframe src="//player.vimeo.com/video/106862089?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-2">
+          <h3>How difficult a fire season is depends on six things:</h3>
+          <p>
+              <br>The nature of wildland vegetation and other fuels including homes intermingled with flammable wildlands.
+              <br>Topography
+              <br>Availability and capability of firefighters
+              <br>Ignitions – even under bad conditions, if fires don’t start thise season is easy 
+              <br>Climate
+              <br>Weather
+          </p>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-3">
+          <p>
+          The wildland fuels problem has developed slowly over many years.  Forests are denser and gaps normally seen in the drier forests have filled in so fire can spread unimpeded.  Vegetation has grown into the spaces that once separated fire on the forest floor from the treetops.  In the desert, invasive species have created a continuous carpet of highly flammable grasses where once the bunch grass grew in clumps with space between them.  
+          </p>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-4">
+          <p>
+          In the past several decades, homes and businesses have spread into wildlands creating the wildland urban interface where buildings and people intermingle with or boarder on flammable wildland vegetation.  Buildings, woodpiles, propane tanks, vehicles, and the like add to the fuels.  Human life at-risk adds to the complexity of firefighting.
+          </p>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-5">
+          <p>
+          Steep slopes, canyons, saddles, and holes make firefighting more difficult and hazardous.  Oregon and Washington are characterized by difficult terrain.
+          </p>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-6">
+          <p>
+          The Pacific Northwest Coordinating Group can call upon well-staffed, equipped, and trained firefighters from local, state, and federal governments and on highly skilled private, commercial firefighters.  When those resources are committed, more firefighters can be brought in from other states and other countries.
+          </p>
+          <p>
+          The Northwest Interagency Coordination Center provides logistical support and intelligence for anticipated and on-going wildfires for all federal and state agencies in the Pacific Northwest.  The center also supports emergencies other than wildfires such as floods, volcanic eruptions and earthquakes.
+          </p>
+          <p>
+          Region wide planning and coordination are provided by expert fire and emergency management staffs of the agencies that are part of the Pacific Northwest Wildfire Coordinating Group. 
+          </p>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-7">
+          <p>
+          Wildfires are started by people and lightning.  Lightning can be predicted but not prevented.  Most human-caused fires can be prevented.
+          </p>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-8">
+          <p>
+          Climate controls fire to a large degree.  The wet western side of the Cascades burns less often then the dry east side.  Historically, coastal forests burned only once every 200 to 400 years.  East side dry pine forests may have burned as often as every 5 years.
+          </p>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-9">
+          <p>
+          Weather drives fire seasons from year to year.  Hot, dry, windy weather is bad fire weather.  Storms that generate many lightning strikes with little rain light hundreds of fires that soon use up firefighting resources close at hand.
+          </p>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch2">
+          <h1> Chapter 2 </h1>
+      </div><!-- end .section -->
+
+  </div><!-- end #fullpage -->
+
+<script>
+if (document.location.hostname != "localhost") {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56061199-1', 'auto');
+    ga('send', 'pageview');
+}
+
+</script>
+</body>
+</html>
