@@ -93,10 +93,23 @@
         z-index: 70;
         width: 100px;
         height: 100%;
-        padding: 0;
+        padding: 2em 0;
         margin:0;
         background-color: rgb(61,67,66);
         text-align: left;
+    }
+
+    .full-background {
+        position: absolute;
+        bottom: 0px; 
+        right: 0px; 
+        padding-right: 100px;
+        min-width: 100%; 
+        min-height: 100%; 
+        width: auto; 
+        height: auto; 
+        z-index: -1000; 
+        overflow: hidden
     }
 
     </style>
@@ -126,12 +139,19 @@
                 anchors:['top',
                 'ch1-1', 'ch1-2', 'ch1-3', 'ch1-4', 'ch1-5', 'ch1-6', 'ch1-7', 'ch1-8', 'ch1-9',
                 'ch2-1'],
-                continuousVertical: true,
-                //navigation: false,
-                //navigationPosition: 'right',
-                //navigationTooltips: ['firstSlide', 'secondSlide'],
-                //slidesNavigation: true,
-                //slidesNavPosition: 'bottom',
+                // Called after a section is loaded.
+                afterLoad: function(anchorLink, index){
+                    //using anchorLink
+                    if(anchorLink == 'ch1-1') {
+                        var vid = document.getElementById("id-video-wild-weather");
+                        if (vid !== null) {
+                            if (!vid.played.length && !vid.ended) {
+                                vid.play();
+                            }
+                        }
+                    }
+                } // end afterLoad
+
             });
     });
     </script>
@@ -140,21 +160,23 @@
   <body>
   <ul id="menu">
       <li data-menuanchor="top" class="active"><a href="#top">Top</a></li>
-      <li data-menuanchor="ch1-1" class="active"><a href="#ch1-1">Chapter 1<br><strong>Weather</strong></a></li>
-      <li data-menuanchor="ch2-1" class="active"><a href="#ch2-1">Chapter 2</a></li>
+      <li data-menuanchor="ch1-1"><a href="#ch1-1">Chapter 1<br><strong>Weather and Difficult Fire Seasons</strong></a></li>
+      <li data-menuanchor="ch2-1"><a href="#ch2-1">Chapter 2</a></li>
   </ul>
   <div id="fullpage">
 
       <div class="section active text-center" id="top">
           <h1 class="main_title">Pacific Northwest Fire Story</h1>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <a href="#about" title="ENTER" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i></a>
       </div><!-- end .section -->
 
       <div class="section text-center" data-anchor="ch1-1">
-          <h1>Weather and Difficult Fire Seasons</h1>
           <div>
-              <iframe src="//player.vimeo.com/video/106862089?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <video id="id-video-wild-weather" class="full-background" controls preload="auto">
+                  <source src="videos/2014-wild-weather-HD.mp4" type="video/mp4" />
+                  Your browser does not support the <code>video</code> element.
+              </video>
           </div>
       </div><!-- end .section -->
 
