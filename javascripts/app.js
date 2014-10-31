@@ -5,9 +5,11 @@ define([
   'backbone',
   'app/router', // Request app/router.js
   'modernizr',
-  'videojs'
+  'videojs',
+  'fullpage',
+  'slimscroll'
 ],
-function($, _, bootstrap, Backbone, Router, Modernizr, videojs) {
+function($, _, bootstrap, Backbone, Router, Modernizr, videojs, fullpage, slimscroll) {
   var initialize = function(){
     //console.log("in app.initialize");
     // Pass in our Router module and call it's initialize function

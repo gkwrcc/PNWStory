@@ -6,6 +6,10 @@ require.config({
         backbone:'libs/backbone/backbone',
         // jQuery
         jquery:'libs/jquery/jquery-1.11.1/jquery',
+        // fullpage.js slimscroll jquery plugin
+        slimscroll: 'libs/jquery.slimscroll.min',
+        // fullpage.js jquery plugin
+        fullpage: 'libs/jquery.fullPage',
         // bootstrap
         bootstrap: '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min',
         // modernizr
