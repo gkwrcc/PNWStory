@@ -53,7 +53,7 @@
     }
 
     #top {
-        background: transparent url(images/jet-and-cloud.png) no-repeat;
+        background: black url(images/jet-and-cloud.png) no-repeat;
         background-size: cover;
         background-position: bottom left;
     }
@@ -142,7 +142,12 @@
         text-align: left;
     }
 
+    #id-intro-video {
+        background-color: black;
+    }
+
     .video-wrapper {
+        background-color: black;
         text-align: center;
     }
     .full-background {
@@ -178,12 +183,22 @@
     <script src="javascripts/libs/jquery.fullPage.js"></script>
 
     <script>
+    // Utility function to start playing a video.
+    function play_video(id) {
+        var vid = document.getElementById(id);
+        if (vid !== null) {
+            if (!vid.played.length && !vid.ended) {
+                vid.play();
+            }
+        }
+    }
+
     $(document).ready(function(){
         // Initialize fullpage.js
             $('#fullpage').fullpage({
                 //Navigation Options
                 menu: '#menu',
-                anchors:['top',
+                anchors:['top', 'intro-video', 'about',
                 'ch1-1', 'ch1-2', 'ch1-3', 'ch1-4', 'ch1-5', 'ch1-6', 'ch1-7', 'ch1-8', 'ch1-9', 'ch1-10',
                 'ch2-1'],
 
@@ -192,14 +207,11 @@
 
                 // Called after a section is loaded.
                 afterLoad: function(anchorLink, index){
-                    //using anchorLink
+                    if(anchorLink == 'intro-video') {
+                        play_video("id-video-PNWCG");
+                    }
                     if(anchorLink == 'ch1-10') {
-                        var vid = document.getElementById("id-video-wild-weather");
-                        if (vid !== null) {
-                            if (!vid.played.length && !vid.ended) {
-                                vid.play();
-                            }
-                        }
+                        play_video("id-video-wild-weather");
                     }
                 }, // end afterLoad
                 onLeave: function(index, nextIndex, direction) {
@@ -232,6 +244,28 @@
                 <i class="fa fa-angle-double-down animated"></i>
                 Scroll down to continue
             </p>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="intro-video" id="id-intro-video">
+          <div class="video-wrapper">
+              <video id="id-video-PNWCG" class="full-background" controls preload="auto" width="720">
+                  <source src="videos/Pacific_Northwest_Coordinating_Group_2014-HD.mp4" type="video/mp4" />
+                  Your browser does not support the <code>video</code> element.
+              </video>
+          </div>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="about" id="id-about">
+          <h2 class="main_title">Pacific Northwest Coordinating Group</h2>
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-2 col-sm-offset-1"> <img src="http://placehold.it/100x100" alt="..."> </div><!-- end col -->
+              <div class="col-sm-2"> <img src="http://placehold.it/100x100" alt="..."> </div><!-- end col -->
+              <div class="col-sm-2"> <img src="http://placehold.it/100x100" alt="..."> </div><!-- end col -->
+              <div class="col-sm-2"> <img src="http://placehold.it/100x100" alt="..."> </div><!-- end col -->
+              <div class="col-sm-2"> <img src="http://placehold.it/100x100" alt="..."> </div><!-- end col -->
+          </div><!-- end row-->
+          </div><!-- end container -->
       </div><!-- end .section -->
 
       <div class="section" data-anchor="ch1-1">
