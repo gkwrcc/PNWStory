@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title></title>
+    <title>Wildfire Siege - The 2014 Pacific Northwest Fires</title>
 
     <!-- Stylesheets -->
     <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="stylesheets/main.min.css">
     <!--<link rel="stylesheet" href="//vjs.zencdn.net/4.8/video-js.css">-->
+    <link rel="stylesheet" href="stylesheets/main.min.css">
 
 
     <!-- Custom Fonts -->
@@ -24,721 +24,218 @@
 
     <!-- Entry point for javascript will be file: main.js -->
     <script data-main="javascripts/main" src="javascripts/libs/require/require.js"></script>
-  </head>
-  <body>
-      <header class="intro">
-          <div class="intro-body">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Pacific Northwest Fire Story</h1>
-                        <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam dictum sollicitudin</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+</head>
+<body>
+
+  <!-- Side navigation menu -->
+  <ul id="menu">
+      <li data-menuanchor="top" class="active"><a href="#top">Home</a></li>
+      <li data-menuanchor="intro-video"><a href="#intro-video">Introduction</a></li>
+      <li data-menuanchor="ch1-1"><a href="#ch1-1"><em>Chapter 1</em><br>Weather and Difficult Fire Seasons</a></li>
+      <li data-menuanchor="ch2-1"><a href="#ch2-1"><em>Chapter 2</em></a></li>
+  </ul>
+
+  <div id="fullpage">
+
+      <div class="section active text-center" id="top">
+          <h1 class="main_title">Wildfire Siege</h1>
+          <h2 class="main_title">The 2014 Pacific Northwest Fires </h2>
+          <p id="top-text">
+          An Air National Guard fighter flies in front of the pyro cumulus column of a 2014 wildfire. 
+          More than 5500 wildfires ignited – 93 became large fires. 
+          The largest fires ever recorded in Oregon and Washington both burned on one day in July.  
+          </p>
+                        <!--<a href="#about" title="ENTER" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i></a>-->
+            <p style="text-align: center;position:absolute; bottom:10px; left: 30px; size: 11px; color: white">
+                <i class="fa fa-angle-double-down animated"></i>
+                Scroll down to continue
+            </p>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="intro-video" id="id-intro-video">
+          <div class="video-wrapper">
+              <video id="id-video-PNWCG" class="full-background" controls preload="auto" width="720">
+                  <source src="videos/Pacific_Northwest_Coordinating_Group_2014-HD.mp4" type="video/mp4" />
+                  Your browser does not support the <code>video</code> element.
+              </video>
+          </div>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="about" id="id-about">
+          <h2 class="main_title">Pacific Northwest Coordinating Group</h2>
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-2 col-sm-offset-1"> <img src="http://placehold.it/100x100" alt="..."> </div><!-- end col -->
+              <div class="col-sm-2"> <img src="http://placehold.it/100x100" alt="..."> </div><!-- end col -->
+              <div class="col-sm-2"> <img src="http://placehold.it/100x100" alt="..."> </div><!-- end col -->
+              <div class="col-sm-2"> <img src="http://placehold.it/100x100" alt="..."> </div><!-- end col -->
+              <div class="col-sm-2"> <img src="http://placehold.it/100x100" alt="..."> </div><!-- end col -->
+          </div><!-- end row-->
+          </div><!-- end container -->
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-1">
+          <h2>Weather and Difficult Fire Seasons</h2>
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-2">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-5">
+              <h3>Fire season difficulty depends on five things</h3>
+              <p>
+                  <br>&bull; &nbsp; <a
+                      title="Click for more about fire-resilient forests"
+                      href="http://ucanr.org/sites/wildfire2011/files/90136.pdf">Fire resiliency</a>
+                  of vegetation and other fuels including
+                  <a href="http://www.sustainablenorthwest.org/what-we-do/success-stories/fire-adapted-communities-in-trinity-county-ca"
+                      title="More on wildland fire-resilient communities">homes</a>
+                  intermingled with fire-prone wildlands
+                  <br>&bull; &nbsp; Topography
+                  <br>&bull; &nbsp; Availability and capacity of firefighters
+                  <br>&bull; &nbsp; Ignitions (even under bad conditions, if fires don't start there is no season)
+                  <br>&bull; &nbsp; <a href="https://fortress.wa.gov/ecy/publications/publications/1201004e.pdf"
+                      title="Learn how a changing climate will affect future wildfires and other natural events here.">
+                      Climate</a> and Weather
+              </p>
+              </div><!-- end col -->
+              <div class="col-sm-6">
+                  <img src="images/pine_forest.jpg" alt="">
+              </div><!-- end col -->
+          </div><!-- end row-->
+          </div><!-- end container -->
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-3">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-5">
+                  <p>
+                  Our current wildland fuels problem has developed slowly over many years. Forests are denser and gaps normally seen in the drier forests have filled in so fire can spread unimpeded. Vegetation has grown into the spaces that once separated fire on the forest floor from the treetops. In the desert, invasive species have created a continuous carpet of highly flammable grasses where bunch grasses once grew in clumps with space between them. 
+                  </p>
+              </div><!-- end col -->
+              <div class="col-sm-6">
+                  <img src="images/pine_forest2.jpg" alt="" width="600">
+              </div><!-- end col -->
+          </div><!-- end row-->
+          </div><!-- end container -->
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-4">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-5">
+                  <p>
+                  In the past several decades, homes and businesses have spread into wildlands creating the wildland urban interface (WUI) where buildings and people intermingle with or boarder on flammable wildland vegetation. Buildings, woodpiles, propane tanks, vehicles, and the like add to fuels. Human life at risk adds to the complexity of firefighting and preparation.
+                  </p>
+              </div><!-- end col -->
+              <div class="col-sm-6">
+                  <img src="images/2024383426.jpg" alt="">
+              </div><!-- end col -->
+          </div><!-- end row-->
+          </div><!-- end container -->
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-5">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-5">
+                  <p>
+                  Steep slopes, canyons, saddles, and holes make firefighting more difficult and hazardous. Oregon and Washington  are characterized by difficult terrain.
+                  </p>
+              </div><!-- end col -->
+              <div class="col-sm-6">
+                  <img src="images/07222009_Fire_Constance_0052.JPG" alt="">
+              </div><!-- end col -->
+          </div><!-- end row-->
+          </div><!-- end container -->
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-6">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-5">
+                  <p>
+                  The Pacific Northwest Coordinating Group can call upon well-staffed, equipped, and trained firefighters from local, state, and federal governments and on highly skilled private, commercial firefighters. When those resources are committed, more firefighters can be brought in from other states and even other countries if needed.
+                  </p>
+
+                  <p>
+                  The Northwest Interagency Coordination Center provides logistical support and intelligence for anticipated and on-going wildfires for all federal and state agencies in the Pacific Northwest. The center also supports emergencies other than wildfires such as floods, volcanic eruptions, and earthquakes.
+                  </p>
+
+                  <p>
+                  Region-wide planning and coordination are provided by expert fire and emergency management staffs of the agencies that are part of the Pacific Northwest Wildfire Coordinating Group. 
+                  </p>
+              </div><!-- end col -->
+              <div class="col-sm-6">
+                  <img src="images/fire.Par.58572.Image.-1.-1.1.gif" alt="">
+              </div><!-- end col -->
+          </div><!-- end row-->
+          </div><!-- end container -->
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-7">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-5">
+                  <p>
+                  Wildfires are started by people and lightning. Lightning can be predicted but not prevented. Most human-caused fires can be prevented.
+                  </p>
+              </div><!-- end col -->
+              <div class="col-sm-6">
+                  <img src="images/2014ss-sagu-2-2a.jpg" alt="" width="500">
+              </div><!-- end col -->
+          </div><!-- end row-->
+          </div><!-- end container -->
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-8">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-5">
+                  <p>
+                  Climate controls fire to a large degree. The wet western side of the Cascades burns less often than the dry east side. Historically, coastal forests burned only once every 200-400 years. East side dry pine forests may have burned as often as every five years.
+                  </p>
+              </div><!-- end col -->
+              <div class="col-sm-6">
+                  <img src="images/climate-forest.jpg" alt="" width="500">
+              </div><!-- end col -->
+          </div><!-- end row-->
+          </div><!-- end container -->
+      </div><!-- end .section -->
+
+      <div class="section" data-anchor="ch1-9">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-5">
+                  <p>
+                  Weather drives fire seasons from year to year. Hot, dry, windy weather is bad fire weather. Storms that generate many lightning strikes with little rain light hundreds of fires that soon require all firefighting resources close at hand.
+                  </p>
+              </div><!-- end col -->
+              <div class="col-sm-6">
+                  <img src="images/Idaho-fires-20120814.jpg" alt="" width="500">
+              </div><!-- end col -->
+          </div><!-- end row-->
+          </div><!-- end container -->
+      </div><!-- end .section -->
+
+      <div class="section text-center" data-anchor="ch1-10">
+          <div class="video-wrapper">
+              <video id="id-video-wild-weather" class="full-background" controls preload="auto">
+                  <source src="videos/2014-wild-weather-HD.mp4" type="video/mp4" />
+                  Your browser does not support the <code>video</code> element.
+              </video>
+          </div>
+      </div><!-- end .section -->
 
 
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h2>About This Page</h2>
-                <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam dictum sollicitudin</p>
-                <img src="images/usfs-shield.png" alt="USFS Shield" width="300">
-            </div>
-        </div>
-    </section>
-                        
-    <section id="wildfires-intro" class="container content-section">
-        <div class="row">
-            <h2 class="text-center">2014 Pacific Northwest Wildfires</h2>
-            <div class="col-sm-8">
-                <p>
-                The fires of 2014 seemed to be a continuation of the 2012 and 2013 fire seasons.
-                Firefighters had no real down time between the fall fires of 2013
-                and the unprecedented rash of fires on the Oregon coast in January, 2014.
-                During these incidents,
-                Oregon firefighters were engaged in full wildland fire suppression activities only four days into the new year.
-                </p>
+      <div class="section" data-anchor="ch2-1">
+          <h1> Chapter 2 </h1>
+      </div><!-- end .section -->
 
-                <p>
-                When it did rain in February and March,
-                the weather brought disaster to a neighborhood near Oso, Washington where emergency responders,
-                usually called for fires, were on the ground to assist.
-                Washington Department of Natural Resources incident management teams responded to coordinate rescue operations,
-                along with many DNR and other agency employees, local firefighters,
-                and <a data-toggle="popover" data-html="true"
-                    data-placement="bottom"
-                    title="For more information..."
-                    data-content="about the Oso mudslide, <a href='http://en.wikipedia.org/wiki/2014_Oso_mudslide'>click here</a>. 
-                    <a href='https://washingtondnr.wordpress.com/tag/landslide/'>And here</a>.
-                    ">volunteers</a>.
-                </p>
+  </div><!-- end #fullpage -->
 
-                <p>
-                On the East Side,
-                the rains triggered a drastic increase in fine wildfire fuels
-                with a flush of grass and wildflower growth that created an unbroken,
-                highly flammable carpet beneath trees and brush.
-                </p>
-
-                <p>
-                Oregon’s largest fire on record exploded through the High Desert brush
-                and dry grass on private and BLM-protected lands near Burns.
-                The fire grew so large, mostly in one day,
-                the perimeter exceeded the freeway distance from Yreka, California to Portland, Oregon.
-                </p>
-
-                <p>
-                On the same day in Eastern Washington,
-                the state’s largest ever wildfire started.
-                It burned more than 300 homes,
-                devastating local communities and the natural environment which draws people to live and recreate in the area.
-                </p>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="//player.vimeo.com/video/106247392?title=0&amp;byline=0&amp;portrait=0" width="500" height="281"
-                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-                
-            </div>
-            <div class="col-sm-4 text-center">
-                <img src="images/oregon-gulch-fire.jpg" width="200" alt="Oregon Gulch Fire">
-            </div><!-- end col -->
-        </div><!-- end row -->
-    </section>
-
-    <section id="january-fires" class="container content-section">
-        <div class="row">
-        <h2 class="text-center">Rare wildfires burn in January</h2>
-            <div class="col-sm-8">
-                <p>
-                Four days into the New Year,
-                the first official wildfire of 2014 ignited when conditions caused the escape of fires meant to reduce fuels
-                by burning limbs and other logging slash.
-                The first wildfire burned 549 acres near the Oregon coast,
-                and cost almost $300,000 to control.
-                </p>
-            </div><!-- end col -->
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <a href="http://bit.ly/1ypuETq">
-                        <img src="images/bone-mountain-wildfire-smoke.png" alt="">
-                    </a>
-                    <div class="caption">
-                    Bone Mountain Wildfire Smoke Plume.  January 5, 2014
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <a href="http://www.weather.com/news/oregon-wildfire-winter-january-20140125">
-                    <img src="images/wet-season.jpg" alt="">
-                    </a>
-                    <div class="caption">
-                        Source:
-                        <a href="http://www.weather.com/news/oregon-wildfire-winter-january-20140125">
-                        The Weather Chanel</a> <br>
-                        Unusual Winter Wildfires in Northwest Oregon <br>
-                        By Jon Erdman Published: Jan 26, 2014, 6:48 AM EST weather.com
-                    </div>
-                </div>
-                
-            </div><!-- end col -->
-        </div><!-- end row -->
-        <div class="row">
-            <div class="col-sm-8">
-                <p>
-                On January 22, the National Weather Service issued a
-                <a href="http://www.wrh.noaa.gov/" data-toggle="tooltip"
-                    title="Click for more information on Red Flag Warnings"
-                    style="white-space: nowrap;">Red Flag Warning</a>
-                for Southwest Oregon because of low relative humidity and east winds.
-                A Red Flag warning alerts wildland fire managers to weather conditions that could result in fire starts
-                and cause fires to burn hot, spread rapidly, or behave erratically.
-                </p>
-
-                <p>
-                Over the next two days,
-                escaped slash burns throughout western Oregon burned over 1,000 acres.
-                In all, 21 January wildfires burned more than 1,600 acres in Oregon.
-                The 10-year average (ODF) for the month of January is 17 acres burned.
-                </p>
-            </div><!-- end col -->
-            <div class="col-sm-4">
-            </div><!-- end col -->
-        </div><!-- end row -->
-        <div class="row">
-            <div class="col-sm-8">
-
-                <h3>Pacific Northwest Wildfire Coordinating Group Prepares</h3>
-                <p>
-                The severity of the 2014 fire season in the region was predicted early,
-                said Bobbie Scopa,
-                Deputy Regional Fire Director for the Bureau of Land Management and US Forest Service in Oregon and Washington.
-                "There was a dry fall and winter with little precipitation.  
-                It's not like when it's wet in the fall and the fuels are wet into the winter freeze. 
-                Fuels were dry all winter. 
-                We were getting large fires on the coast in January." 
-                </p>
-
-                <p>
-                The decision was made early to ramp up preparedness
-                <a data-toggle="popover"
-                    data-html="true"
-                    data-placement="bottom"
-                    title="For more information"
-                    data-content="on preparedness levels and large fire information in the
-                    Pacific Northwest <a href='http://www.nwccweb.us/index.aspx'>click here</a>."
-                    >levels</a>
-                of fire fighting resources as the fire season developed.  The BLM, Forest Service, Oregon Department of Forestry and Washington Department of Natural Resources were all agreed.  "Nationally, people were supportive of our plans...they saw the same things we did."
-                </p>
-
-                <p>
-                A key element of preparedness decisions was pre-positioning of resources as fire conditions worsened. 
-                "We had extra engines, dozers, hand crews, and initial attack crews from back east. 
-                We got extra helicopters to units with severity dollars. 
-                We had 14 or 16 single engine air tankers across the geographic area almost the entire summer when we normally have four. 
-                There were three water scooping air tankers,
-                three or four air tankers at Moses Lake,
-                two or three at Redmond, and two or three at Medford.  
-                These were supplemented by aircraft from Boise, Idaho
-                and by the DC-10 jet air tanker until it was needed for fires in northern California."
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="images/smokey2.gif" alt="">
-                    <div class="caption">
-                    </div>
-                </div>
-                <iframe width="320" height="220" src="//www.youtube.com/embed/CrHqB1Ouddg?start=26&amp;end=53" frameborder="0" allowfullscreen></iframe>
-                <iframe width="320" height="220" src="//www.youtube.com/embed/MQ_XH_RHr2A?start=5&amp;end=86" frameborder="0" allowfullscreen></iframe>
-                <iframe width="320" height="220" src="//www.youtube.com/embed/zHEqDcDRj1E?start=25&amp;end=121" frameborder="0" allowfullscreen></iframe>
-            </div><!-- end col -->
-        </div><!-- end row -->
-
-        <div class="row">
-            <div class="col-sm-8">
-                <h3>National Fire Prevention Teams ordered.</h3>
-                <p>
-                To counteract the increased threat of human-caused wildfires during the approaching season, the
-                <a data-toggle="popover" data-html="true" data-placement="bottom"
-                    title="For more information"
-                    data-content="about the Pacific Northwest Coordinating Group <a href='http://www.nwccweb.us/admin/pnwcg.aspx'>click here</a>.">
-                    PNWCG</a>
-                ordered a National Wildland Fire Prevention Team.
-                The team’s assignment was to support the prevention efforts of field units and to build fire prevention capacity. 
-                Capacity building included increasing the number of prevention personnel in the Pacific Northwest qualified to serve on or lead fire prevention teams.
-                </p>
-
-                <p>
-                The first
-                <a data-toggle="popover" data-html="true" data-placement="bottom"
-                    title="For more information"
-                    data-content="on National Fire Prevention and Education teams <a href='http://gacc.nifc.gov/sacc/PDFs/overhead/NFPET_Program_Plan.pdf'>click here</a>.">
-                National Fire Prevention and Education Team</a>
-                arrived on June 16.  The last team left on September 26.  
-                </p>
-
-                <p>
-                Work began with an assessment of human causes of wildfires across the region.  Ignitions were mapped.  Field visits and telephone interviews documented the human-caused fire problems.  The current fire prevention programs were described.  Communication needs and networks were identified. Community concerns described.
-                </p>
-
-                <p>
-                A twitter account and website were developed to enhance communication among field units and to disseminate communication materials and practices.  Prevention products were developed and distributed to the field.  An outreach to partners in collaborative programs was implemented.
-                </p>
-                
-                <p>
-                Prevention capacity was developed though involvement of personnel from the region on the prevention teams.  A long-term plan was developed to train and staff several prevention teams in the region.   The prevention teams were able to address the immediate threat of human-caused fires by reinforcing established fire prevention programs throughout the region.  Capacity building efforts will leave the region better prepared to cope with emerging human-caused wildfire threats in future years.
-                </p>
-
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="//player.vimeo.com/video/106546250?title=0&amp;byline=0&amp;portrait=0" width="500" height="281"
-                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-            </div><!-- end col -->
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="images/prevent-forest-fires.jpg" alt="">
-                    <div class="caption">
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <img src="images/FIRE_Safety_03.jpg" alt="">
-                    <div class="caption">
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <img src="images/burn-barrel.jpg" alt="">
-                    <div class="caption">
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <img src="images/defensespace-hires.jpg" alt="">
-                    <div class="caption">
-                    </div>
-                </div>
-            </div><!-- end col -->
-        </div><!-- end row -->
-    </section>
-
-    <!-- Begin ch3-weather -->
-    <section id="ch3-weather" class="container content-section">
-        <div class="row">
-            <h2 class="text-center">Weather</h2>
-            <div class="col-sm-8 col-sm-offset-2">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="vimeo-iframe" src="//player.vimeo.com/video/106862089?title=0&amp;byline=0&amp;portrait=0"
-                        width="500" height="281" frameborder="0"
-                        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-            </div><!-- end col -->
-        </div><!-- end row -->
-    </section> <!-- End ch3-weather -->
-
-    <!-- Begin ch4-wet-spring -->
-    <section id="ch4-wet-spring" class="container content-section">
-        <div class="row">
-            <h2 class="text-center">A Wet Spring</h2>
-            <div class="col-sm-8">
-                <h3>Incident Management Teams assist at fatal landslide</h3>
-                <p>
-                Precipitation seldom fell throughout Oregon and Washington during the fall of 2013 and into December and January, 2014.
-                However, rains returned in February and March,
-                making up much of the deficit,
-                particularly over the northern part of the region west of the Cascade Mountains. 
-                </p>
-            </div><!-- end col -->
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="images/sac-fire1.jpg" alt="">
-                    <div class="caption">
-                    </div>
-                </div>
-            </div><!-- end col -->
-        </div> <!-- end row -->
-        <div class="row">
-            <div class="col-sm-8">
-                <p>
-                While the rains provided welcome – if temporary – relief to the persistent statewide drought,
-                they spelled disaster for a neighborhood near Oso, Washington.
-                </p>
-
-                <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="//player.vimeo.com/video/109897245?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0"
-                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-
-                <!-- Begin oso-slide-photos-1 -->
-                <div id="oso-slide-photos-1" class="carousel slide">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#oso-slide-photos-1" data-slide-to="0" class="active"></li>
-                    <li data-target="#oso-slide-photos-1" data-slide-to="1"></li>
-                    <li data-target="#oso-slide-photos-1" data-slide-to="2"></li>
-                  </ol>
-
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="images/oso-slide1.jpg" alt="">
-                      <div class="carousel-caption">
-                        Photo caption 1
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="images/oso-slide2.jpg" alt="">
-                      <div class="carousel-caption">
-                        Photo caption 2
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="http://placehold.it/680x400" alt="...">
-                      <div class="carousel-caption">
-                        Photo caption 3
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#oso-slide-photos-1" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#oso-slide-photos-1" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                </div>
-                <!-- End oso-slide-photos-1 -->
-            </div><!-- end col -->
-            <div class="col-sm-4">
-            </div><!-- end col -->
-        </div> <!-- end row -->
-
-        <div class="row">
-            <div class="col-sm-8">
-                <p>
-                <a data-toggle="popover"
-                    data-placement="bottom"
-                    data-html="true"
-                    title="For more information"
-                    data-content="on Incident Management Teams in Pacific Northwest <a href='http://www.nwccweb.us/logistics/overhead.aspx'>click here</a>.<br>
-                    For information on National Incident Management teams <a href='http://www.nifc.gov/nicc/logistics/overhead/overhead.htm'>click here</a>.<br>
-                    For more information about National Incident Management Organization (NIMO) teams <a href='http://www.fs.usda.gov/nimo'>click here</a>.">
-                Incident Management Teams</a>
-                best known for managing large wildfires are, in fact, all-risk teams.
-                In addition to wildfires, they respond to emergencies from floods and hurricanes to earthquakes and terrorist attacks. 
-                </p>
-
-                <p>
-                The Washington Department of Natural Resources sent a Type 3 incident management team the same day.
-                Incident management teams provide leadership, logistics, planning, and operational support.
-                They pay and account for costs, order resources, assist the media to safely cover the incident,
-                and provide information to help affected people cope with the disaster.
-                </p>
-                
-                <h3>Incident Management Teams</h3>
-                <p>
-                <a href="http://www.nps.gov/fire/wildland-fire/learning-center/fire-in-depth/incident-command-system.cfm">
-                    <img src="images/incident-team2.jpg" width="600" alt="">
-                </a>
-                </p>
-            </div><!-- end col -->
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="images/incident-team.jpg" alt="">
-                </div>
-            </div><!-- end col -->
-        </div> <!-- end row -->
-
-        <div class="row">
-            <div class="col-sm-8">
-                <h3>Desert rains stimulate growth, later fueling fires</h3>
-                <p>
-                On rangelands and in dryer forests east of the Cascades, spring rains broke the drought long enough for grasses, wildflowers, and other low growing vegetation to put on significant growth. As weather dried out again the lush vegetation cured to a highly flammable, continuous carpet beneath the sagebrush and trees. When lightning ignited wildfires in July and hot, dry winds blew, fires spread quickly. The Buzzard Complex on rangelands 45 miles southeast of Burns, Oregon burned 395,747 acres, most of it in one intense day. 
-                </p>
-
-                <h3>Wet Spring</h3>
-                <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="//player.vimeo.com/video/109288261?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen
-                    mozallowfullscreen allowfullscreen></iframe>
-                </div>
-                <p>&nbsp;</p>
-            </div><!-- end col -->
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="images/rainINdesert.jpg" alt="">
-                </div>
-                <div class="thumbnail">
-                    <img src="images/rainINdesert2.jpg" alt="">
-                </div>
-            </div><!-- end col -->
-        </div> <!-- end row -->
-
-        <div class="row">
-            <div class="col-sm-8">
-                <p>
-                Weather extremes that led to fires in January on the normally wet Oregon Coast and a deadly landslide triggered by intense rains characterize the 2014 fire season. Later, the unprecedented one-day run of the Carlton Complex fires that burned 400 square miles and more than 300 homes will be followed by intense rains that flood fire camp, wash away roads, and endanger firefighters.
-                </p>
-                <p>
-If experiences with wildfires since the turn of the century suggest a “new normal”, perhaps we should expect more complex fires seasons rather than longer, dryer, hotter fire seasons. Perhaps the new normal is characterized more by weather patterns for which we are not prepared, including more extreme weather on both ends of the spectrum. 
-                </p>
-            </div><!-- end col -->
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="images/car-debris.jpg" alt="">
-                </div>
-            </div><!-- end col -->
-        </div> <!-- end row -->
-    </section> <!-- End ch4-wet-spring -->
-
-
-
-    <!-- Begin ch5-two-bulls-->
-    <section id="ch5-two-bulls" class="container content-section">
-        <div class="row">
-            <h2 class="text-center">Arsonists touch off the 2014 wildfire season in Oregon</h2>
-            <div class="col-sm-12 text-center">
-                <p>
-                <iframe width="560" height="315" src="//www.youtube.com/embed/J-3Te98SgBc" frameborder="0" allowfullscreen></iframe>
-                </p>
-            </div>
-            <div class="col-sm-8">
-                <h3>The Fire Season Starts Near Bend Oregon</h3>
-                <p>
-                On June 7, the Two Bulls Fire just west of Bend, Oregon set the stage for an intense 2014 fire season in Washington and Oregon.
-                </p>
-
-                <p>
-                The blaze began as two small human-caused fires in an area of dense
-                <a data-toggle="popover" data-html="true" data-placement="bottom"
-                    title="For information on"
-                    data-content="fire effects related to ponderosa <a href='http://www.fs.fed.us/database/feis/plants/tree/pinponp/all.html'>click here</a>"
-                    >ponderosa pine</a>
-                and brush.
-                Pushed by winds,
-                the two fires joined and raced six miles across more than 6,000 acres of forest land on the first day.
-                Although wind speed was estimated at less than 20 miles per hour,
-                its direction aligned perfectly with fuels, says Craig Lenz,
-                fire staff officer for the Deschutes-Ochoco National Forest and
-                <span style="white-space:nowrap;">
-                <a data-toggle="popover" data-html="true" data-placement="bottom"
-                    title="For more information on"
-                    data-content="the BLM Prineville District <a href='http://www.blm.gov/or/districts/prineville/index.php'>click here</a>."
-                    >BLM Prine-ville District</a>.</span>
-                </p>
-
-                <p>
-                During its run, the fire burned past suburbs of nearby Bend, and was stopped just short of the Skyliners Road neighborhood the se-cond day. Still, 250 to 350 homes were evacuated, and many more were on alert. "The wind was mostly from the north," says Letz. "If the wind had shifted more to the west, we would have had more of a problem."
-                </p>
-
-                <p>
-                For its behavior and size, the Two Bulls Fire was very early in the season,
-                says Oregon Department of Forestry
-                <a data-toggle="popover" data-html="true" data-placement="bottom"
-                    title="For more information about "
-                    data-content="Oregon Department of Forestry - Central Oregon District <a href='http://www.oregon.gov/ODF/centraloregon/Pages/index.aspx'>click here</a>."
-                    >Central Oregon District</a>
-                Forester, George Ponte.. "Watching the ongoing drought situation in May, the district was probably on course to at least as difficult a season as 2013."
-                </p>
-                <p>
-                "The fire came before we officially entered fire season, and we didn't have the staffing we would have had later on in the season," Ponte notes. 
-                </p>
-
-                <p>
-                <iframe width="420" height="315" src="//www.youtube.com/embed/GCEWcabPAcg?end=113" frameborder="0" allowfullscreen></iframe>
-                </p>
-                <p>
-                The Awbrey Hall Fire burned in August and the Two Bulls Fire burned in early June. The fact that both fires burned with similar intensities and rates-of-spread demonstrates how serious fire conditions were at the beginning of the 2014 wildfire season. The Two Bulls Fire validated the Pacific Northwest Wildfire Coordinating Group’s early preparations.
-                </p>
-
-                <h3>Hot & dry –  but not necessarily more wildfires</h3>
-
-                <object name="kaltura_player_1414527879" id="kaltura_player_1414527879" type="application/x-shockwave-flash" allowScriptAccess="always" allowNetworking="all" allowFullScreen="true" height="345" width="560" data="http://www.kaltura.com/index.php/kwidget/wid/0_acntwbet/uiconf_id/25650512"><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="allowFullScreen" value="true" /><param name="bgcolor" value="#000000" /><param name="movie" value="http://www.kaltura.com/index.php/kwidget/wid/0_acntwbet/uiconf_id/25650512"/><param name="flashVars" value=""/><a href="http://corp.kaltura.com">video platform</a><a href="http://corp.kaltura.com/video_platform/video_management">video management</a><a href="http://corp.kaltura.com/solutions/video_solution">video solutions</a><a href="http://corp.kaltura.com/video_platform/video_publishing">video player</a></object>
-
-                <p>
-                It was not long before a series of lightning storms provided ignitions beyond firefight-ers’ fears. Officials suspect arsonists caused the Two Bulls Fire. Human-caused fires continued to plague hard pressed fire-fighters. People also started the 36 Pit Fire, last of the large fires of the season. But the 2014 fire season was powered mostly by lightning.
-                </p>
-
-                <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="//player.vimeo.com/video/102414976?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-            </div> <!-- end col -->
-
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <a href="http://instagram.com/p/o9nNOIiADX">
-                    <img src="images/two-bulls.jpg" alt="">
-                    </a>
-                    <div class="caption">
-                        Two separate smoke columns.
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <img src="images/two-bulls2.jpg" alt="">
-                    <div class="caption">
-                        Flames and smoke visible behind houses close up in foreground.
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <img src="images/two-bulls3.jpg" alt="">
-                    <div class="caption">
-                        Firefighters silhouetted by flames.
-                    </div>
-                </div>
-            </div> <!-- end col -->
-        </div> <!-- end row -->
-
-        <div class="row">
-            <div class="col-sm-8">
-                <p></p>
-                <h3>Working well Together</h3>
-
-                <p>
-                Ponte and Letz agree the relationships between federal agencies and the state departments of forestry are outstanding.
-                "Simulations, exercises, and after season reviews all help," Ponte says.
-                "I would hold the model we have here in Central Oregon against any model in the U.S.
-                We've fought a lot of fire together and learned a lot of lessons."
-                </p>
-
-                <p>
-                "We work a lot with ODF, the Bend Fire Department, the Deschutes County Sheriff,
-                and the
-                <a data-toggle="popover" data-html="true" data-placement="bottom"
-                    title="For information on"
-                    data-content="<a href='http://sheriff.deschutes.org/'>Deschutes County Sheriffs</a>.<br>
-                    <a href='http://www.bend.or.us/index.aspx?page=49'>Bend Police Department</a>.<br>
-                    <a href='http://www.bendoregon.gov/index.aspx?page=50'>Bend Fire Dept.</a>."
-                >Bend Police Department</a>
-                ," says Letz.
-                "Everybody was at the command post right away.
-                It was just after a pre-season cooperator's meeting.
-                Everybody knew each other and what their jobs were."
-                </p>
-
-                <p>
-                "When you roll up to a fire, everyone is really comfortable," Letz adds. "Folks were ready...it was key to us being successful."
-                </p>
-
-                <!--
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="vimeo-iframe" src="//player.vimeo.com/video/107536437?title=0&amp;byline=0&amp;portrait=0"
-                        width="500" height="281" frameborder="0"
-                        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-                -->
-            </div> <!-- end col -->
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="images/two-bulls4.jpg" alt="">
-                    <div class="caption">
-                        BLM and USFS engines with two firefighters close up.
-                    </div>
-                </div>
-            </div> <!-- end col -->
-        </div> <!-- end row -->
-        <div class="row">
-            <div class="col-sm-8">
-                <p></p>
-                <h3>The Roots of Fire-Adapted Communities</h3>
-                <p>
-                The Two Bulls fire reminded many Bend residents and firefighters of the 1990 Awbrey Hall Fire. Both fires burned west of town and threatened neighborhoods. Both made six-mile runs through brush and ponderosa pine. But the Awbrey Hall Fire burned 22 homes and the Two Bulls Fire burned none. Defensible space helped make the difference.
-                </p>
-                <p>
-                After the 1996 Skeleton Fire burned 17,000 acres in Bend and destroyed 19 homes,
-                Bend’s Fire Marshal, Gary Marshall, developed
-                <a data-toggle="popover" data-html="true" data-placement="bottom"
-                    title="For information on "
-                    data-content="FireFree <a href='http://www.firefree.org/'>click here</a>">
-                FireFree</a>.
-                With financial help from Safeco Insurance, local businesses, fire agencies, and private citizens,
-                FireFree launched a campaign to promote a simple 10-step program for fire hazard mitigation around homes.  
-                </p>
-                <p>
-                This was an early, successful effort to en-gage neighborhoods in wildfire prepared-ness and mitigation.
-                Local projects like FireFree in Bend ultimately demonstrated the potential for citizen-based community wildfire protection and blazed the path to national programs like
-                <a data-toggle="popover" data-html="true" data-placement="bottom"
-                    title="For information "
-                    data-content="about FireWise <a href='http://www.firewise.org/?sso=0'>click here</a>."
-                    >FireWise</a>
-                and
-                <a data-toggle="popover" data-html="true" data-placement="bottom"
-                    title="For more information "
-                    data-content="about Fire Adapted Communities in the Pacific Northwest <a href='http://pnwfac.weebly.com/'>click here</a>."
-                    >Fire Adapted Communities</a>.
-                <a href="http://www.firefree.org">www.firefree.org</a>
-                </p>
-                <p>
-                The state of Oregon has an aggressive Firewise program helping communities and landowners minimize risks from wildfire. Although the Twin Bulls fire was stopped before nearby Firewise practices were test-ed, there were benefits from past work done, Ponte and Letz agree.
-                </p>
-
-                <p>
-                "On the very south end of the fire the Deschutes and Ochoco National Forests had done a lot of fuel reduction work in the past and the Skyliners Road neighborhood had instituted a tremendous amount of Firewise practices," Letz says. "We were feeling pretty comfortable about being able to catch the fire if it got that far."
-                </p>
-
-                <h3>Two Bulls Fire and Defensible Space</h3>
-                <p>
-                City of Bend video magazine on the Two Bulls fire and firewise preparation of communities.
-                <iframe width="560" height="315" src="//www.youtube.com/embed/kfbhpFFtCTQ" frameborder="0" allowfullscreen></iframe>
-                </p>
-
-            </div> <!-- end col -->
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="images/FireAdaptedCommunitiesLogo.jpg" alt="">
-                    <div class="caption">
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <img src="images/bend-cloud.jpg" alt="">
-                    <div class="caption">
-                        Red fire cloud over Bend at night
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <img src="images/two-bulls5.jpg" alt="">
-                    <div class="caption">
-                        Hose lay in the NW corner of the fire along a dozer line and a retardant drop for direct attack on the active fire - evidence of the remarkable “stop” made on this part of the fire
-                    </div>
-                </div>
-            </div> <!-- end col -->
-        </div> <!-- end row -->
-        <div class="row">
-            <div class="col-sm-8">
-                <h3>Fire Information Essential</h3>
-                <p>
-                "In these days of social media, the public wants information instantly," he adds. "This worked so well, we're going to consider joint information centers with future fires near communities in Central Oregon."                       
-                </p>
-
-                <h3>Maybe this is the new normal</h3>
-
-                <p>
-                More than 317,000 acres have burned in 36 Central Oregon fires this year, the second hard year in a row. So, what lies ahead?
-                </p>
-                <p>
-                "We've had pretty extensive drought," says Ponte. "It will take a lot of wet stuff to change that."	
-                </p>
-                <p>
-                "After this year and 2013, three bad years in a row would be pretty unusual, though it's not unheard of," he noted. "Maybe this is the new normal." 
-                </p>
-                
-
-            </div> <!-- end col -->
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="images/fire-information-official.jpg" alt="">
-                    <div class="caption">
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <img src="images/western-wildfires.jpg" alt="">
-                    <div class="caption">
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <img src="images/firefighter-moping-up.jpg" alt="">
-                    <div class="caption">
-                        Firefighter moping up 
-                    </div>
-                </div>
-
-            </div> <!-- end col -->
-        </div> <!-- end row -->
-    </section> <!-- End ch5-two-bulls -->
-
-
-    <!-- Example HTML5 videos
-    <div>
-        <video id="id_value-of-prevention"
-            controls preload="auto" width="480"
-            class="video-js vjs-default-skin">
-            <source src="videos/value-of-prevention-1920x1080.mp4" type="video/mp4" />
-        </video>
-    </div>
-
-    <div>
-        <video id="id_national-guard"
-            controls preload="auto" width="480"
-            class="video-js vjs-default-skin">
-            <source src="videos/national-guard-1920x1080.mp4" type="video/mp4" />
-        </video>
-    </div>
-    -->
-
-<footer>
-    <div class="container text-center">
-        <div class="col-md-3"></div>
-        <div class="col-md-3">
-            Footer information, credits, and other typical bottom of the page information goes here.
-        </div>
-        <div class="col-md-3">
-            Copyright &copy; ??? 2014
-        </div>
-        <div class="col-md-3"></div>
-    </div>
-</footer>
-<script src="javascripts/scale.fix.js"></script>
 <script>
 if (document.location.hostname != "localhost") {
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
