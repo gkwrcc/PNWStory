@@ -5143,6 +5143,9 @@ a:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1em; }
 
+.section .row img {
+  box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.4); }
+
 .section h2 {
   font-family: Lora, serif;
   font-size: 5em; }
