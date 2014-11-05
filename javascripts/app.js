@@ -60,8 +60,16 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
         //Navigation Options
         menu: '#menu',
         anchors:['top', 'intro-video', 'about',
-        'ch1-1', 'ch1-2', 'ch1-3', 'ch1-4', 'ch1-5', 'ch1-6', 'ch1-7', 'ch1-8', 'ch1-9', 'ch1-10',
-        'ch2-1'],
+        'ch1-1',
+        'ch2-1', 'ch2-2', 'ch2-3', 'ch2-4', 'ch2-5', 'ch2-6', 'ch2-7', 'ch2-8', 'ch2-9', 'ch2-10',
+        'ch3-1',
+        'ch4-1',
+        'ch5-1',
+        'ch6-1',
+        'ch7-1',
+        'ch8-1',
+        'ch9-1'
+        ],
 
         keyboardScrolling: true,
         animateAnchor: true,
@@ -72,11 +80,11 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 play_video("id-video-PNWCG");
             }
 
-            if(anchorLink.substring(0,3) == 'ch1') {
+            if(anchorLink.substring(0,3) == 'ch2') {
                 play_background_video("videos/resilient-landscapes-SD.mp4");
             }
 
-            if(anchorLink == 'ch1-10') {
+            if(anchorLink == 'ch2-10') {
                 play_video("id-video-wild-weather");
             }
         }, // end afterLoad
