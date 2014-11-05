@@ -3,6 +3,7 @@
 @import 'bigvideo';
 $usfs_green: rgb(0,112,60);
 $graygreen: rgb(40,40,35);
+$para_background: rgba(20, 20, 10, .70);
 
 @mixin bgsize($width, $height:"") {
     -webkit-background-size: $width unquote($height);
@@ -42,13 +43,10 @@ h2.main_title {
 }
 
 a {
-    color: #221;
-    text-shadow: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #443;
     text-shadow: none;
     font-weight: bold;
 }
@@ -86,16 +84,14 @@ a:hover {
     margin-right: 110px;
 }
 .section p {
-    /*
-    display: block;
-    width: 360px;
-    margin: 0 auto;
-    */
     text-align: justify;
     font-size: 1.5em;
     font-family: Lora,serif;
     font-weight: normal;
     text-shadow: 2px 2px 4px black;
+    background-color: $para_background;
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 1em;
 }
 
 #menu li {
