@@ -5084,7 +5084,8 @@ body {
 
 h1, h2, h3 {
   text-align: center;
-  text-shadow: 2px 2px 4px black; }
+  text-shadow: 2px 2px 4px black;
+  font-family: Lora, serif; }
 
 h1.main_title, h2.main_title {
   color: #14140f;
@@ -5093,14 +5094,7 @@ h1.main_title, h2.main_title {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-right: 110px; }
-
-h1.main_title {
-  font-size: 8em; }
-
-h2.main_title {
-  font-size: 6em;
-  font-weight: bold; }
+  padding-right: 100px; }
 
 a {
   font-weight: bold; }
@@ -5136,7 +5130,8 @@ a:hover {
   transition: background 0.3s ease-in-out; }
 
 .section {
-  margin-right: 110px; }
+  margin-right: 110px;
+  padding-right: 110px; }
 
 .section p {
   text-align: justify;
@@ -5147,6 +5142,18 @@ a:hover {
   background-color: rgba(20, 20, 10, 0.7);
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1em; }
+
+.section h2 {
+  font-family: Lora, serif;
+  font-size: 5em; }
+
+h1.main_title {
+  font-size: 6em; }
+
+h2.main_title {
+  font-size: 5em;
+  font-weight: bold;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 #menu li {
   display: inline-block;
