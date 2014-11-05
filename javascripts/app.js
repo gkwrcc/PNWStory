@@ -24,12 +24,24 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
     // $(function () { $("[data-toggle='popover']").popover(); });
     // Utility function to start playing a video.
     function play_background_video(url) {
+        if ( window.BV == null ) {
+            // Initialize BigVideo
+            window.BV = new $.BigVideo();
+            window.BV.init();
+        }
         var options = {
             ambient: true,
             doLoop: true
         };
+
+        if (window.BVurl && window.BVurl == url) {
+            // return if the video is already playing.
+            if (!window.BV.getPlayer().paused()) return;
+        }
+
         if (!window.Modernizr.touch) {
             // Dont show videos on mobile devices that don't allow autoplay.
+            window.BVurl = url;
             window.BV.show(url, options);
         }
     }
@@ -37,15 +49,11 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
         var vid = document.getElementById(id);
         if (vid !== null) {
             if (!vid.played.length && !vid.ended) {
-                window.BV.getPlayer().pause(); // First stop background video.
+                if (window.BV) window.BV.getPlayer().pause(); // First stop background video.
                 vid.play();
             }
         }
     }
-
-    // Initialize BigVideo
-    window.BV = new $.BigVideo();
-    window.BV.init();
 
     // Initialize fullpage.js
     $('#fullpage').fullpage({
@@ -64,7 +72,7 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 play_video("id-video-PNWCG");
             }
 
-            if(anchorLink == 'ch1-1') {
+            if(anchorLink.substring(0,3) == 'ch1') {
                 play_background_video("videos/resilient-landscapes-SD.mp4");
             }
 
