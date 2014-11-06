@@ -5169,8 +5169,11 @@ h2.main_title {
 #menu li a {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-weight: normal;
   width: 100px; }
+
+#menu li a em {
+  font-size: 0.86em; }
 
 #menu li.active a:hover {
   color: rgba(255, 255, 255, 0.5);
@@ -5189,6 +5192,8 @@ h2.main_title {
   border-left: 3px solid #ffdb6e; }
 
 #menu {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
   position: absolute;
   bottom: 0;
   right: 0;
