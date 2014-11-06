@@ -5134,8 +5134,8 @@ a:hover {
   padding-right: 100px; }
 
 .section p {
-  text-align: justify;
-  font-size: 1.5em;
+  text-align: left;
+  font-size: 1.25em;
   font-family: Lora, serif;
   font-weight: normal;
   text-shadow: 2px 2px 4px black;
