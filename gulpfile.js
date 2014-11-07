@@ -6,6 +6,7 @@ var minifycss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var gzip = require('gulp-gzip');
 var livereload = require('gulp-livereload');
+var rjs = require('requirejs');
 
 // Set up a static server
 var serverport = 8000;
@@ -25,15 +26,27 @@ gulp.task('build-sass', function() {
         .pipe(livereload());
 });
 
+// Compiles javascripts
+gulp.task('build-javascripts', function() {
+    rjs.optimize({
+    baseUrl: "javascripts",
+    mainConfigFile: 'javascripts/main.js',
+    name: "main",
+    out: "main-built.js"
+    });
+});
+
 // Watch files for changes
 gulp.task('watch', function() {
     server.listen(serverport);
     livereload.listen();
     gulp.watch('./stylesheets/*', ['build-sass']);
     gulp.watch('./*.html').on('change', livereload.changed);
+    gulp.watch('./javascripts/**/*.js', ['build-javascripts']);
+    gulp.watch('./main-built.js').on('change', livereload.changed);
 });
 
-gulp.task('default', ['build-sass', 'watch']);
+gulp.task('default', ['build-sass', 'build-javascripts', 'watch']);
 
 // To auto-reload gulp on changes to gulpfile.js
 var spawn = require('child_process').spawn;
