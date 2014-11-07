@@ -97,6 +97,12 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
             }
 
             if(anchorLink == 'ch3-5') {
+                var div = $("#id-north-coast-fire");
+                var htmlcode = [
+                  '<video id="id-video-north-coast-fire" controls width="720">',
+                  '<source src="videos/CH3-4_KGWO_NORTH_COAST_FIRE_VIDEO.mp4" type="video/mp4" />'
+                ];
+                div.html(htmlcode.join());
                 play_video("id-video-north-coast-fire");
             }
 
