@@ -45,12 +45,16 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
             window.BV.show(url, options);
         }
     }
+    var videos_already_played = {};
     function play_video(id) {
+        // return if we already auto played this video
+        if (videos_already_played[id]) return;
         var vid = document.getElementById(id);
         if (vid !== null) {
             if (!vid.played.length && !vid.ended) {
                 if (window.BV) window.BV.getPlayer().pause(); // First stop background video.
                 vid.play();
+                videos_already_played[id] = true;
             }
         }
     }
@@ -62,7 +66,7 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
         anchors:['top', 'intro-video', 'about',
         'ch1-1', 'ch1-2', 'ch1-3', 'ch1-4',
         'ch2-1', 'ch2-2', 'ch2-3', 'ch2-4', 'ch2-5', 'ch2-6', 'ch2-7', 'ch2-8', 'ch2-9', 'ch2-10',
-        'ch3-1',
+        'ch3-1', 'ch3-2', 'ch3-3', 'ch3-4', 'ch3-5', 'ch3-6', 'ch3-7', 'ch3-8', 'ch3-9', 'ch3-10', 'ch3-11', 'ch3-12', 'ch3-13',
         'ch4-1',
         'ch5-1',
         'ch6-1',
@@ -91,6 +95,46 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
             if(anchorLink == 'ch2-10') {
                 play_video("id-video-wild-weather");
             }
+
+            if(anchorLink == 'ch3-5') {
+                play_video("id-video-north-coast-fire");
+            }
+
+            if(anchorLink == 'ch3-7') {
+                var div = $("#id-scooper-planes");
+                var htmlcode = [
+                    '<video id="id-video-scooper-planes" controls>',
+                    '<source src="videos/ch3-7-scooper-planes.mp4" type="video/mp4" />'
+                    ];
+                div.html(htmlcode.join());
+                play_video("id-video-scooper-planes");
+            }
+
+            if(anchorLink == 'ch3-8') {
+                var div = $("#id-how-to-fight");
+                var htmlcode = [
+                    '<video id="id-video-how-to-fight" controls width="480">',
+                    '<source src="videos/ch3-8-how-to-fight.mp4" type="video/mp4" />'
+                    ];
+                div.html(htmlcode.join());
+                div = $("#id-bulldozers");
+                htmlcode = [
+                    '<video id="id-video-bulldozers" controls width="480">',
+                    '<source src="videos/ch3-8-bulldozers.mp4" type="video/mp4" />'
+                    ];
+                div.html(htmlcode.join());
+            }
+
+            if(anchorLink == 'ch3-13') {
+                var div = $("#id-value-of-prevention");
+                var htmlcode = [
+                    '<video id="id-video-value-of-prevention" controls width="720">',
+                    '<source src="videos/value-of-prevention-1920x1080.mp4" type="video/mp4" />'
+                    ];
+                div.html(htmlcode.join());
+                play_video("id-video-value-of-prevention");
+            }
+            
         }, // end afterLoad
         onLeave: function(index, nextIndex, direction) {
         } // end onLeave
