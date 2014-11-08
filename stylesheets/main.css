@@ -5210,7 +5210,9 @@ h2.main_title {
 
 .video-wrapper {
   background-color: black;
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  height: 100%; }
 
 .full-background {
   position: absolute;
@@ -5223,5 +5225,4 @@ h2.main_title {
   max-height: 100%;
   width: auto;
   height: auto;
-  overflow: hidden;
-  object-fit: cover; }
+  overflow: hidden; }

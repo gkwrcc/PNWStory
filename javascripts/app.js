@@ -99,7 +99,7 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
             if(anchorLink == 'ch3-5') {
                 var div = $("#id-north-coast-fire");
                 var htmlcode = [
-                  '<video id="id-video-north-coast-fire" controls width="720">',
+                  '<video id="id-video-north-coast-fire" class="full-background" controls>',
                   '<source src="videos/CH3-4_KGWO_NORTH_COAST_FIRE_VIDEO.mp4" type="video/mp4" />'
                 ];
                 div.html(htmlcode.join());
@@ -134,7 +134,7 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
             if(anchorLink == 'ch3-13') {
                 var div = $("#id-value-of-prevention");
                 var htmlcode = [
-                    '<video id="id-video-value-of-prevention" controls width="720">',
+                    '<video id="id-video-value-of-prevention" class="full-background" controls>',
                     '<source src="videos/value-of-prevention-1920x1080.mp4" type="video/mp4" />'
                     ];
                 div.html(htmlcode.join());
