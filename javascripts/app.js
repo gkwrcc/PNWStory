@@ -67,7 +67,7 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
         'ch1-1', 'ch1-2', 'ch1-3', 'ch1-4',
         'ch2-1', 'ch2-2', 'ch2-3', 'ch2-4', 'ch2-5', 'ch2-6', 'ch2-7', 'ch2-8', 'ch2-9', 'ch2-10',
         'ch3-1', 'ch3-2', 'ch3-3', 'ch3-4', 'ch3-5', 'ch3-6', 'ch3-7', 'ch3-8', 'ch3-9', 'ch3-10', 'ch3-11', 'ch3-12', 'ch3-13',
-        'ch4-1',
+        'ch4-1', 'ch4-2', 'ch4-3', 'ch4-4', 'ch4-5', 'ch4-6', 'ch4-7', 'ch4-8', 'ch4-9', 'ch4-10',
         'ch5-1',
         'ch6-1',
         'ch7-1',
@@ -158,6 +158,26 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                     ];
                 div.html(htmlcode.join());
                 play_video("id-video-value-of-prevention");
+            }
+            
+            if(anchorLink == 'ch4-4') {
+                var div = $("#id-oso-landslide");
+                var htmlcode = [
+                    '<video id="id-video-oso-landslide" class="full-background" controls>',
+                    '<source src="videos/oso-landslide-HD.mp4" type="video/mp4" />'
+                    ];
+                div.html(htmlcode.join());
+                play_video("id-video-oso-landslide");
+            }
+            
+            if(anchorLink == 'ch4-9') {
+                var div = $("#id-wet-spring");
+                var htmlcode = [
+                    '<video id="id-video-wet-spring" class="full-background" controls>',
+                    '<source src="videos/wet-spring-HD.mp4" type="video/mp4" />'
+                    ];
+                div.html(htmlcode.join());
+                play_video("id-video-wet-spring");
             }
             
         }, // end afterLoad
