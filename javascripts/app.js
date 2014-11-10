@@ -77,6 +77,7 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
 
         keyboardScrolling: true,
         animateAnchor: true,
+        resize: false,
 
         // Called after a section is loaded.
         afterLoad: function(anchorLink, index){
