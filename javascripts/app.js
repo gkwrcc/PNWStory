@@ -93,7 +93,25 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 play_background_video("videos/resilient-landscapes-SD.mp4");
             }
 
+            if(anchorLink.substring(0,3) == 'ch3') {
+                play_background_video("videos/fall-surge-SD.mp4");
+            }
+
+            if(anchorLink.substring(0,3) == 'ch4') {
+                play_background_video("videos/oso-loop-SD.mp4");
+            }
+
+            if(anchorLink.substring(0,3) == 'ch5') {
+                play_background_video("videos/siege-ramps-up-SD.mp4");
+            }
+
             if(anchorLink == 'ch2-10') {
+                var div = $("#id-wild-weather");
+                var htmlcode = [
+                      '<video id="id-video-wild-weather" class="full-background" controls>',
+                      '<source src="videos/2014-wild-weather-HD.mp4" type="video/mp4" />',
+                ];
+                div.html(htmlcode.join());
                 play_video("id-video-wild-weather");
             }
 
