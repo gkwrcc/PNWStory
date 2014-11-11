@@ -201,6 +201,16 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 play_video("id-video-aubrey-hills-fire");
             }
 
+            if(anchorLink == 'ch5-13') {
+                var div = $("#id-two-bulls-fire-defensible-space");
+                var htmlcode = [
+                    '<video id="id-video-two-bulls-fire-defensible-space" class="full-background" controls>',
+                    '<source src="videos/two-bulls-fire-defensible-space.mp4" type="video/mp4" />'
+                    ];
+                div.html(htmlcode.join());
+                play_video("id-video-two-bulls-fire-defensible-space");
+            }
+
             
         }, // end afterLoad
         onLeave: function(index, nextIndex, direction) {
