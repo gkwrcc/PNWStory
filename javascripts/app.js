@@ -68,7 +68,8 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
         'ch2-1', 'ch2-2', 'ch2-3', 'ch2-4', 'ch2-5', 'ch2-6', 'ch2-7', 'ch2-8', 'ch2-9', 'ch2-10',
         'ch3-1', 'ch3-2', 'ch3-3', 'ch3-4', 'ch3-5', 'ch3-6', 'ch3-7', 'ch3-8', 'ch3-9', 'ch3-10', 'ch3-11', 'ch3-12', 'ch3-13',
         'ch4-1', 'ch4-2', 'ch4-3', 'ch4-4', 'ch4-5', 'ch4-6', 'ch4-7', 'ch4-8', 'ch4-9', 'ch4-10',
-        'ch5-1',
+        'ch5-1', 'ch5-2', 'ch5-3', 'ch5-4', 'ch5-5', 'ch5-6', 'ch5-7', 'ch5-8', 'ch5-9', 'ch5-10',
+          'ch5-11', 'ch5-12', 'ch5-13', 'ch5-14', 'ch5-15',
         'ch6-1',
         'ch7-1',
         'ch8-1',
@@ -179,6 +180,27 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 div.html(htmlcode.join());
                 play_video("id-video-wet-spring");
             }
+            
+            if(anchorLink == 'ch5-2') {
+                var div = $("#id-two-bulls-fire-in-bend");
+                var htmlcode = [
+                    '<video id="id-video-two-bulls-fire-in-bend" class="full-background" controls>',
+                    '<source src="videos/two-bulls-fire-in-bend.mp4" type="video/mp4" />'
+                    ];
+                div.html(htmlcode.join());
+                play_video("id-video-two-bulls-fire-in-bend");
+            }
+
+            if(anchorLink == 'ch5-7') {
+                var div = $("#id-aubrey-hills-fire");
+                var htmlcode = [
+                    '<video id="id-video-aubrey-hills-fire" controls>',
+                    '<source src="videos/ch5-7-aubrey-hills-fire.mp4" type="video/mp4" />'
+                    ];
+                div.html(htmlcode.join());
+                play_video("id-video-aubrey-hills-fire");
+            }
+
             
         }, // end afterLoad
         onLeave: function(index, nextIndex, direction) {
