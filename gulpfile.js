@@ -32,6 +32,10 @@ gulp.task('build-javascripts', function() {
     baseUrl: "javascripts",
     mainConfigFile: 'javascripts/main.js',
     name: "main",
+    paths: {
+        bootstrap: "empty:",
+        videojs: "empty:"
+    },
     out: "main-built.js"
     });
 });
@@ -42,8 +46,9 @@ gulp.task('watch', function() {
     livereload.listen();
     gulp.watch('./stylesheets/*', ['build-sass']);
     gulp.watch('./*.html').on('change', livereload.changed);
-    gulp.watch('./javascripts/**/*.js', ['build-javascripts']);
-    gulp.watch('./main-built.js').on('change', livereload.changed);
+    gulp.watch('./javascripts/**/*.js').on('change', livereload.changed);
+//gulp.watch('./javascripts/**/*.js', ['build-javascripts']);
+//gulp.watch('./main-built.js').on('change', livereload.changed);
 });
 
 gulp.task('default', ['build-sass', 'build-javascripts', 'watch']);
