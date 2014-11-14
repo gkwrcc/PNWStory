@@ -5079,7 +5079,7 @@ html, body {
   display: none !important; }
 
 body {
-  background-color: #00703c;
+  background-color: black;
   color: white; }
 
 h1, h2, h3 {
@@ -5114,6 +5114,9 @@ a:hover {
   width: 60%;
   margin: 0 auto;
   text-align: left; }
+
+#id-about {
+  background-color: #00703c; }
 
 .btn-circle {
   width: 70px;

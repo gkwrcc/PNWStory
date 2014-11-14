@@ -80,6 +80,11 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
         animateAnchor: true,
         resize: false,
 
+        // Called when the DOM is ready
+        afterRender: function(){
+            window.spinner.stop();
+            $("#id-spin-load").fadeOut(800);
+        },
         // Called after a section is loaded.
         afterLoad: function(anchorLink, index){
             if(anchorLink == 'intro-video') {
