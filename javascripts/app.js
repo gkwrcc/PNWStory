@@ -54,8 +54,15 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
             if (!vid.played.length && !vid.ended) {
                 if (window.BV) window.BV.getPlayer().pause(); // First stop background video.
                 vid.play();
+                window.current_video = vid;
                 videos_already_played[id] = true;
             }
+        }
+    }
+
+    function pause_video() {
+        if (window.current_video) {
+            window.current_video.pause();
         }
     }
 
@@ -219,6 +226,7 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
             
         }, // end afterLoad
         onLeave: function(index, nextIndex, direction) {
+            pause_video();
         } // end onLeave
 
     });
