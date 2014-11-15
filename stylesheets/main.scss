@@ -4,6 +4,7 @@
 $usfs_green: rgb(0,112,60);
 $graygreen: rgb(40,40,35);
 $para_background: rgba(20, 20, 10, .70);
+$menu_background: rgb(61,67,66);
 
 @mixin bgsize($width, $height:"") {
     -webkit-background-size: $width unquote($height);
@@ -13,6 +14,7 @@ $para_background: rgba(20, 20, 10, .70);
 }
 
 body {
+    padding-right: 99px;
     background-color: black;
     color: white;
 }
@@ -31,7 +33,6 @@ h2.main_title {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    padding-right: 100px;
 }
 
 
@@ -79,7 +80,6 @@ a:hover {
 
 .section {
     margin-right: 100px;
-    padding-right: 100px;
 }
 .section p {
     text-align: left;
@@ -112,15 +112,16 @@ h2.main_title {
 
 #menu li {
     display:inline-block;
-    margin: 3px 0;
+    margin: 0;
     color: #000;
+    position: relative;
 }
 #menu li.active,
 #menu li.active:hover{
     color: #fff;
 }
-#menu li a{
-    text-decoration:none;
+#menu li a {
+    text-decoration: none;
     color: white;
     font-weight: normal;
     width: 100px;
@@ -130,18 +131,18 @@ h2.main_title {
 }
 #menu li.active a:hover{
     color: rgba(255,255,255,.5);
-    border-left: 3px solid rgb(255, 219, 110);
+    //border-left: 3px solid rgb(255, 219, 110);
 }
 #menu li:hover{
     background: rgba(255,255,255, 0.2);
-    border-left: 3px solid rgb(255, 219, 110);
+    //border-left: 3px solid rgb(255, 219, 110);
 }
 #menu li a,
 #menu li.active a{
     padding: 8px;
     display:block;
 }
-#menu li.active a{
+#menu li.active a {
     color: #fff;
     border-left: 3px solid rgb(255, 219, 110);
 }
@@ -156,9 +157,52 @@ h2.main_title {
     height: 100%;
     padding: 2em 0;
     margin:0;
-    background-color: rgb(61,67,66);
+    background-color: $menu_background;
     text-align: left;
 }
+
+// submenu
+#menu div.submenu {
+    margin-top: auto;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    visibility: hidden;
+    display: none;
+    width: 200px;
+    padding: 0;
+    background-color: lighten($menu_background, 10%);
+    border-left: 3px solid $menu_background;
+    color: white;
+    text-align: left;
+}
+
+#menu li:hover .submenu {
+    visibility: visible;
+    display: block;
+}
+
+.submenu p {
+    margin: 0;
+    padding: 0;
+}
+.submenu p a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100% !important; // override #menu li a
+    border-bottom: 1px solid $menu_background;
+}
+.submenu p a:hover {
+    background-color: darken($menu_background, 10%);
+}
+
+.submenu a,
+.submenu a:hover {
+    border-left: none !important;
+}
+
+// end submenu
 
 #id-intro-video {
     background-color: black;
@@ -174,7 +218,6 @@ h2.main_title {
     position: absolute;
     bottom: 0px; 
     left: 0px; 
-    padding-right: 100px;
     min-width: 100%; 
     min-height: 100%; 
     max-width: 100%; 

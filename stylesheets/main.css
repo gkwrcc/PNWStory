@@ -5079,6 +5079,7 @@ html, body {
   display: none !important; }
 
 body {
+  padding-right: 99px;
   background-color: black;
   color: white; }
 
@@ -5093,8 +5094,7 @@ h1.main_title, h2.main_title {
   text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  letter-spacing: 1px;
-  padding-right: 100px; }
+  letter-spacing: 1px; }
 
 a {
   font-weight: bold; }
@@ -5133,8 +5133,7 @@ a:hover {
   transition: background 0.3s ease-in-out; }
 
 .section {
-  margin-right: 100px;
-  padding-right: 100px; }
+  margin-right: 100px; }
 
 .section p {
   text-align: left;
@@ -5163,8 +5162,9 @@ h2.main_title {
 
 #menu li {
   display: inline-block;
-  margin: 3px 0;
-  color: #000; }
+  margin: 0;
+  color: #000;
+  position: relative; }
 
 #menu li.active, #menu li.active:hover {
   color: #fff; }
@@ -5179,12 +5179,10 @@ h2.main_title {
   font-size: 0.86em; }
 
 #menu li.active a:hover {
-  color: rgba(255, 255, 255, 0.5);
-  border-left: 3px solid #ffdb6e; }
+  color: rgba(255, 255, 255, 0.5); }
 
 #menu li:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-left: 3px solid #ffdb6e; }
+  background: rgba(255, 255, 255, 0.2); }
 
 #menu li a, #menu li.active a {
   padding: 8px;
@@ -5208,6 +5206,41 @@ h2.main_title {
   background-color: #3d4342;
   text-align: left; }
 
+#menu div.submenu {
+  margin-top: auto;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  visibility: hidden;
+  display: none;
+  width: 200px;
+  padding: 0;
+  background-color: #555e5c;
+  border-left: 3px solid #3d4342;
+  color: white;
+  text-align: left; }
+
+#menu li:hover .submenu {
+  visibility: visible;
+  display: block; }
+
+.submenu p {
+  margin: 0;
+  padding: 0; }
+
+.submenu p a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  border-bottom: 1px solid #3d4342; }
+
+.submenu p a:hover {
+  background-color: #252828; }
+
+.submenu a, .submenu a:hover {
+  border-left: none !important; }
+
 #id-intro-video {
   background-color: black; }
 
@@ -5221,7 +5254,6 @@ h2.main_title {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  padding-right: 100px;
   min-width: 100%;
   min-height: 100%;
   max-width: 100%;
