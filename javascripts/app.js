@@ -23,10 +23,13 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
     // Enable all popovers.
     // $(function () { $("[data-toggle='popover']").popover(); });
     // Utility function to start playing a video.
-    function play_background_video(url) {
+    function play_background_video(id, url) {
         if ( window.BV == null ) {
             // Initialize BigVideo
-            window.BV = new $.BigVideo();
+            var opts = {
+                useFlashForFirefox: false
+            }
+            window.BV = new $.BigVideo(opts);
             window.BV.init();
         }
         var options = {
@@ -34,14 +37,14 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
             doLoop: true
         };
 
-        if (window.BVurl && window.BVurl == url) {
+        if (window.BVid && window.BVid == id) {
             // return if the video is already playing.
             if (!window.BV.getPlayer().paused()) return;
         }
 
         if (!window.Modernizr.touch) {
             // Dont show videos on mobile devices that don't allow autoplay.
-            window.BVurl = url;
+            window.BVid = id;
             window.BV.show(url, options);
         }
     }
@@ -99,23 +102,38 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
             }
 
             if(anchorLink.substring(0,3) == 'ch1') {
-                play_background_video("videos/prelude-SD.mp4");
+                play_background_video("id-video-prelude", [
+                { type: "video/mp4",  src: "videos/prelude-SD.mp4" },
+                { type: "video/webm",  src: "videos/prelude-SD.webm" }
+                ]);
             }
 
             if(anchorLink.substring(0,3) == 'ch2') {
-                play_background_video("videos/resilient-landscapes-SD.mp4");
+                play_background_video("id-video-resilient-landscapes", [
+                    { type: "video/mp4", src: "videos/resilient-landscapes-SD.mp4"},
+                    { type: "video/webm", src: "videos/resilient-landscapes-SD.webm"}
+                ]);
             }
 
             if(anchorLink.substring(0,3) == 'ch3') {
-                play_background_video("videos/fall-surge-SD.mp4");
+                play_background_video("id-video-fall-surge", [
+                    { type: "video/mp4", src: "videos/fall-surge-SD.mp4"},
+                    { type: "video/webm", src: "videos/fall-surge-SD.webm"}
+                ]);
             }
 
             if(anchorLink.substring(0,3) == 'ch4') {
-                play_background_video("videos/oso-loop-SD.mp4");
+                play_background_video("id-video-oso-loop", [
+                    { type: "video/mp4", src: "videos/oso-loop-SD.mp4"},
+                    { type: "video/webm", src: "videos/oso-loop-SD.webm"}
+                ]);
             }
 
             if(anchorLink.substring(0,3) == 'ch5') {
-                play_background_video("videos/siege-ramps-up-SD.mp4");
+                play_background_video("id-video-siege-ramps-up", [
+                    { type: "video/mp4", src: "videos/siege-ramps-up-SD.mp4"},
+                    { type: "video/webm", src: "videos/siege-ramps-up-SD.webm"}
+                ]);
             }
 
             if(anchorLink == 'ch2-10') {
@@ -123,6 +141,7 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 var htmlcode = [
                       '<video id="id-video-wild-weather" class="full-background" controls>',
                       '<source src="videos/2014-wild-weather-HD.mp4" type="video/mp4" />',
+                      '<source src="videos/2014-wild-weather-HD.webm" type="video/webm" />'
                 ];
                 div.html(htmlcode.join());
                 play_video("id-video-wild-weather");
@@ -132,7 +151,8 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 var div = $("#id-north-coast-fire");
                 var htmlcode = [
                   '<video id="id-video-north-coast-fire" class="full-background" controls>',
-                  '<source src="videos/CH3-4_KGWO_NORTH_COAST_FIRE_VIDEO.mp4" type="video/mp4" />'
+                  '<source src="videos/ch3-4-KGWO-north-coast-fire.mp4" type="video/mp4" />',
+                  '<source src="videos/ch3-4-KGWO-north-coast-fire.webm" type="video/webm" />'
                 ];
                 div.html(htmlcode.join());
                 play_video("id-video-north-coast-fire");
@@ -142,7 +162,8 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 var div = $("#id-scooper-planes");
                 var htmlcode = [
                     '<video id="id-video-scooper-planes" controls>',
-                    '<source src="videos/ch3-7-scooper-planes.mp4" type="video/mp4" />'
+                    '<source src="videos/ch3-7-scooper-planes.mp4" type="video/mp4" />',
+                    '<source src="videos/ch3-7-scooper-planes.webm" type="video/webm" />'
                     ];
                 div.html(htmlcode.join());
                 play_video("id-video-scooper-planes");
@@ -152,13 +173,15 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 var div = $("#id-how-to-fight");
                 var htmlcode = [
                     '<video id="id-video-how-to-fight" controls width="480">',
-                    '<source src="videos/ch3-8-how-to-fight.mp4" type="video/mp4" />'
+                    '<source src="videos/ch3-8-how-to-fight.mp4" type="video/mp4" />',
+                    '<source src="videos/ch3-8-how-to-fight.webm" type="video/webm" />'
                     ];
                 div.html(htmlcode.join());
                 div = $("#id-bulldozers");
                 htmlcode = [
                     '<video id="id-video-bulldozers" controls width="480">',
-                    '<source src="videos/ch3-8-bulldozers.mp4" type="video/mp4" />'
+                    '<source src="videos/ch3-8-bulldozers.mp4" type="video/mp4" />',
+                    '<source src="videos/ch3-8-bulldozers.webm" type="video/webm" />'
                     ];
                 div.html(htmlcode.join());
             }
@@ -167,7 +190,8 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 var div = $("#id-value-of-prevention");
                 var htmlcode = [
                     '<video id="id-video-value-of-prevention" class="full-background" controls>',
-                    '<source src="videos/value-of-prevention-1920x1080.mp4" type="video/mp4" />'
+                    '<source src="videos/value-of-prevention-1920x1080.mp4" type="video/mp4" />',
+                    '<source src="videos/value-of-prevention-1920x1080.webm" type="video/webm" />'
                     ];
                 div.html(htmlcode.join());
                 play_video("id-video-value-of-prevention");
@@ -177,7 +201,8 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 var div = $("#id-oso-landslide");
                 var htmlcode = [
                     '<video id="id-video-oso-landslide" class="full-background" controls>',
-                    '<source src="videos/oso-landslide-HD.mp4" type="video/mp4" />'
+                    '<source src="videos/oso-landslide-HD.mp4" type="video/mp4" />',
+                    '<source src="videos/oso-landslide-HD.webm" type="video/webm" />'
                     ];
                 div.html(htmlcode.join());
                 play_video("id-video-oso-landslide");
@@ -187,7 +212,8 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 var div = $("#id-wet-spring");
                 var htmlcode = [
                     '<video id="id-video-wet-spring" class="full-background" controls>',
-                    '<source src="videos/wet-spring-HD.mp4" type="video/mp4" />'
+                    '<source src="videos/wet-spring-HD.mp4" type="video/mp4" />',
+                    '<source src="videos/wet-spring-HD.webm" type="video/webm" />'
                     ];
                 div.html(htmlcode.join());
                 play_video("id-video-wet-spring");
@@ -197,7 +223,8 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 var div = $("#id-two-bulls-fire-in-bend");
                 var htmlcode = [
                     '<video id="id-video-two-bulls-fire-in-bend" class="full-background" controls>',
-                    '<source src="videos/two-bulls-fire-in-bend.mp4" type="video/mp4" />'
+                    '<source src="videos/two-bulls-fire-in-bend.mp4" type="video/mp4" />',
+                    '<source src="videos/two-bulls-fire-in-bend.webm" type="video/webm" />'
                     ];
                 div.html(htmlcode.join());
                 play_video("id-video-two-bulls-fire-in-bend");
@@ -207,7 +234,8 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 var div = $("#id-aubrey-hills-fire");
                 var htmlcode = [
                     '<video id="id-video-aubrey-hills-fire" controls>',
-                    '<source src="videos/ch5-7-aubrey-hills-fire.mp4" type="video/mp4" />'
+                    '<source src="videos/ch5-7-aubrey-hills-fire.mp4" type="video/mp4" />',
+                    '<source src="videos/ch5-7-aubrey-hills-fire.webm" type="video/webm" />'
                     ];
                 div.html(htmlcode.join());
                 play_video("id-video-aubrey-hills-fire");
@@ -217,7 +245,8 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
                 var div = $("#id-two-bulls-fire-defensible-space");
                 var htmlcode = [
                     '<video id="id-video-two-bulls-fire-defensible-space" class="full-background" controls>',
-                    '<source src="videos/two-bulls-fire-defensible-space.mp4" type="video/mp4" />'
+                    '<source src="videos/two-bulls-fire-defensible-space.mp4" type="video/mp4" />',
+                    '<source src="videos/two-bulls-fire-defensible-space.webm" type="video/webm" />'
                     ];
                 div.html(htmlcode.join());
                 play_video("id-video-two-bulls-fire-defensible-space");

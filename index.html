@@ -29,7 +29,7 @@
 <body>
 <div id="id-spin-load" style="z-index:9000;width:100%; height:100%; position:absolute; top:0; left:0; background-color: black;">
     <script>
-    document.write('<h1 class="main_title" style="color:#aaa;padding:0;">LOADING...</h1>');
+    document.write("<h1 class=\"main_title\" style=\"color:#aaa;padding:0;\">LOADING...</h1>");
     </script>
     <noscript>
         <h2>For full functionality of this site it is necessary to enable JavaScript.
@@ -122,6 +122,7 @@ window.spinner = spinner;
           <div class="video-wrapper">
               <video id="id-video-PNWCG" class="full-background" controls preload="auto">
                   <source src="videos/Pacific_Northwest_Coordinating_Group_2014-SD.mp4" type="video/mp4" />
+                  <source src="videos/Pacific_Northwest_Coordinating_Group_2014-SD.webm" type="video/webm" />
                   Your browser does not support the <code>video</code> element.
               </video>
           </div>
@@ -998,21 +999,12 @@ if (document.location.hostname != "localhost") {
     <!-- Tell the browser to preload these videos. -->
     <video id="id-video-prelude" preload="auto">
         <source src="videos/prelude-SD.mp4" type="video/mp4" />
+        <source src="videos/prelude-SD.webm" type="video/webm" />
     </video>
     <video id="id-video-resilient-landscapes" preload="auto">
         <source src="videos/resilient-landscapes-SD.mp4" type="video/mp4" />
+        <source src="videos/resilient-landscapes-SD.webm" type="video/webm" />
     </video>
-    <!-- We can only load so many videos at once....
-    <video id="id-video-fall-surge" preload="auto">
-        <source src="videos/fall-surge-SD.mp4" type="video/mp4" />
-    </video>
-    <video id="id-video-oso-loop" preload="auto">
-        <source src="videos/oso-loop-SD.mp4" type="video/mp4" />
-    </video>
-    <video id="id-video-siege-ramps-up" preload="auto">
-        <source src="videos/siege-ramps-up-SD.mp4" type="video/mp4" />
-    </video>
-    -->
 </div><!-- end .hidden -->
 
 </body>
