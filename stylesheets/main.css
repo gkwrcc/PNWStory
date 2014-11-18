@@ -5238,6 +5238,11 @@ h2.main_title {
 .submenu p a:hover {
   background-color: #252828; }
 
+.submenu p:first-child {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Lora, serif; }
+
 .submenu a, .submenu a:hover {
   border-left: none !important; }
 
