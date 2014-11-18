@@ -79,11 +79,11 @@ function($, _, bootstrap, Backbone, Router, Modernizr, videojs, slimscroll, easi
         'ch3-1', 'ch3-2', 'ch3-3', 'ch3-4', 'ch3-5', 'ch3-6', 'ch3-7', 'ch3-8', 'ch3-9', 'ch3-10', 'ch3-11', 'ch3-12', 'ch3-13',
         'ch4-1', 'ch4-2', 'ch4-3', 'ch4-4', 'ch4-5', 'ch4-6', 'ch4-7', 'ch4-8', 'ch4-9', 'ch4-10',
         'ch5-1', 'ch5-2', 'ch5-3', 'ch5-4', 'ch5-5', 'ch5-6', 'ch5-7', 'ch5-8', 'ch5-9', 'ch5-10',
-          'ch5-11', 'ch5-12', 'ch5-13', 'ch5-14', 'ch5-15',
-        'ch6-1',
-        'ch7-1',
-        'ch8-1',
-        'ch9-1'
+          'ch5-11', 'ch5-12', 'ch5-13', 'ch5-14', 'ch5-15'
+        //'ch6-1',
+        //'ch7-1',
+        //'ch8-1',
+        //'ch9-1'
         ],
 
         keyboardScrolling: true,
