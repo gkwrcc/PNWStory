@@ -5146,7 +5146,8 @@ a:hover {
   padding: 0.5em; }
 
 .section .row img {
-  box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 18px; }
 
 .section h2 {
   font-family: Lora, serif;
